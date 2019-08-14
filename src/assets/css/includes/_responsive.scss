@@ -1,0 +1,29 @@
+@mixin device-phone {
+	@media only screen and (max-device-width: 667px) {
+		@content;
+	}
+}
+
+@mixin phone {
+	@media screen and (min-width: #{$breakpoint-phone + 1}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: #{$breakpoint-tablet + 1}) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (min-width: #{$breakpoint-laptop + 1}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media screen and (min-width: #{$breakpoint-desktop + 1}) {
+		@content;
+	}
+}

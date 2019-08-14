@@ -1,0 +1,116 @@
+footer {
+	padding: 50px 0;
+	background: $colour-accent;
+
+	> span {
+		margin: 0 .35em;
+	}
+
+	.footer-social {
+		text-align: right;
+
+		svg {
+			margin: 10px;
+			width: auto;
+			transition: opacity ease-in .2s;
+
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	.footer-row {
+		margin-top: $bsu;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.footer-company-details {
+		font-size: $font-size-base / 1.25;
+
+		p {
+			margin-bottom: 0;
+		}
+
+		a + a {
+			margin-left: $qsu;
+		}
+	}
+
+	a {
+		color: $colour-black;
+		text-decoration: none;
+	}
+
+	dl {
+		margin-bottom: 0;
+
+		dt {
+			margin-bottom: $qsu;
+		}
+
+		dd {
+			margin-bottom: 0;
+		}
+
+		svg {
+			margin-top: -1px;
+			width: 15px;
+			height: auto;
+			margin-right: $qsu;
+		}
+
+		svg, span {
+			vertical-align: middle;
+		}
+	}
+
+	.footer-logo {
+		color: $colour-black;
+		font-weight: bold;
+		text-decoration: none;
+		position: relative;
+		z-index: 2;
+
+		> * {
+			vertical-align: middle;
+		}
+
+		img {
+			height: 30px;
+			width: auto;
+			margin-right: $qsu;
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-laptop) {
+		.footer-content {
+			> * {
+				&:nth-child(3), &:nth-child(4) {
+					margin-top: $hsu;
+				}
+			}
+		}
+
+		.footer-company-details {
+			> *:first-child {
+				margin-bottom: $qsu;
+			}
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-tablet) {
+		.footer-content {
+			> * {
+				margin-top: $hsu;
+
+				&:first-child {
+					margin-top: 0;
+				}
+			}
+		}
+	}
+}

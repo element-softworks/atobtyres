@@ -1,0 +1,215 @@
+header {
+	background-color: transparent !important;
+	border: none;
+	z-index: 1;
+	position: relative;
+	@include container;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: $bsu;
+	margin-bottom: $bsu;
+
+	.header-logo {
+		color: $colour-black;
+		font-weight: bold;
+		text-decoration: none;
+		position: relative;
+		z-index: 2;
+
+		> * {
+			vertical-align: middle;
+		}
+
+		img {
+			height: 30px;
+			width: auto;
+			margin-right: $qsu;
+		}
+	}
+
+	.header-mobile-navigation-toggle, .header-mobile-navigation-close {
+		border: none;
+		background: none;
+		line-height: 1;
+		position: relative;
+		z-index: 2;
+
+		svg {
+			font-size: 25px;
+		}
+	}
+
+	.header-mobile-navigation-close {
+		display: none;
+		position: fixed;
+		top: $bsu;
+		right: $bsu;
+		z-index: 3;
+	}
+
+	&.header-mobile-navigation-opening {
+		nav {
+			display: flex;
+		}
+	}
+
+	&.header-mobile-navigation-open {
+		nav {
+			z-index: 2;
+			opacity: 1;
+
+			.header-mobile-navigation-close {
+				display: block;
+			}
+		}
+	}
+
+	&.header-mobile-navigation-closing {
+		nav {
+			opacity: 0;
+
+			@include laptop {
+				opacity: 1;
+			}
+		}
+	}
+
+	nav {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: $colour-accent;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		width: 100vw;
+		padding: $bsu;
+		z-index: 1;
+
+		ul {
+			list-style: none;
+			padding-left: 0;
+			margin-bottom: 0;
+
+			li {
+				display: inline-block;
+
+				&:last-child a {
+					margin-right: 0;
+				}
+			}
+		}
+
+		a {
+			color: $colour-black;
+			margin: 0 $bsu;
+			font-weight: bold;
+			display: inline-block;
+			font-size: $font-size-base * 2.5;
+			position: relative;
+
+			&.mobile-navigation-item {
+				display: block;
+			}
+
+			&::before {
+				content: "";
+				height: 2px;
+				position: absolute;
+				left: 0;
+				right: 0;
+				width: 0;
+				top: 100%;
+				background: $colour-accent-dark;
+				transition: width cubic-bezier(0.445, 0.05, 0.55, 0.95) .2s;
+			}
+
+			&, &:hover {
+				text-decoration: none;
+			}
+
+			&:hover::before, &.active::before {
+				width: 100%;
+			}
+
+			&.active {
+				cursor: default;
+
+				&:hover {
+					color: $colour-black;
+				}
+
+				&::before {
+					background: $colour-black;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: $breakpoint-laptop) {
+		nav {
+			display: none;
+			opacity: 0;
+			transition: opacity ease-in .3s;
+
+			ul {
+				li {
+					display: block;
+					margin-top: $hsu;
+
+					&:first-child {
+						margin-top: 0;
+					}
+				}
+			}
+
+			a {
+				&::before {
+					height: 4px;
+				}
+
+				&.mobile-navigation-item {
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+	@include laptop {
+		position: static;
+
+		.header-mobile-navigation-toggle,
+		&.header-mobile-navigation-open nav .header-mobile-navigation-close {
+			display: none;
+		}
+
+		nav {
+			position: static;
+			display: block;
+			background: none;
+			opacity: 1;
+			width: auto;
+			padding: 0;
+
+			a {
+				font-size: $font-size-base;
+
+				&.mobile-navigation-item {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.portfolio-nav {
+	background: $colour-accent;
+	header {
+		margin: 0 auto;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}

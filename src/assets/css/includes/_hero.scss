@@ -1,0 +1,73 @@
+.hero {
+	display: flex;
+	background-size: 180px 180px;
+	background-image: linear-gradient(to right, #6491dc 1px, transparent 1px),
+	linear-gradient(to bottom, #6491dc 1px, #6580dc 1px);
+	border-radius: 0;
+	margin-top: -130px;
+	height: 90vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	min-height: 800px;
+
+	.hero-container {
+		@include container;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		.hero-graphic {
+			flex-grow: 1;
+			margin-bottom: $bsu * 2;
+			margin-top: $bsu * 3;
+			min-width: 360px;
+			padding: 0 15px;
+
+			@include laptop {
+				margin-top: 0;
+				padding: 0;
+			}
+		}
+
+		.hero-content {
+			flex-shrink: 1;
+			padding-left: 0;
+			max-width: 850px;
+		}
+	}
+
+	&.hero-clipped {
+		clip-path: polygon(
+						0 0,
+						100% 0,
+						100% 100%,
+						0 calc(100% - 7vw)
+		);
+	}
+
+	&:not(.hero-clipped) {
+		height: inherit;
+		min-height: 450px;
+		.hero-container {
+			padding-top: 100px;
+			padding-bottom: 30px;
+		}
+	}
+
+	@include laptop {
+		.hero-container {
+			flex-direction: row;
+
+			.hero-graphic {
+				margin-bottom: 0;
+			}
+
+			.hero-content {
+				padding-left: $bsu * 2;
+				max-width: none;
+			}
+		}
+	}
+}

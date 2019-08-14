@@ -1,0 +1,24 @@
+@import 'config';
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
+@import 'includes/responsive';
+@import 'includes/layout';
+@import 'includes/typography';
+@import 'includes/hero';
+@import 'includes/cta';
+@import 'includes/header';
+@import 'includes/footer';
+@import 'includes/button';
+
+* {
+	font-family: 'Lato', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+svg {
+	height: auto;
+	width: 100%;
+	overflow: visible;
+}

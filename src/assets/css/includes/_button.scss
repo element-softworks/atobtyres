@@ -1,0 +1,27 @@
+.btn {
+	&.btn-primary {
+		border: 2px solid $colour-accent;
+
+		&:hover, &:focus {
+			background-color: $colour-accent-dark;
+			border: 2px solid $colour-accent-dark;
+		}
+	}
+
+	&.btn-secondary {
+		background-color: transparent;
+		border: 2px solid $colour-black;
+		color: $colour-black;
+
+		&:hover, &:focus, &:active, &:not(.disabled):active {
+			background: $colour-light-gray;
+			color: $colour-black;
+		}
+	}
+
+	&.btn-light {
+		&:focus {
+			border: 2px solid darken($colour-light-gray, 10%);
+		}
+	}
+}

@@ -1,0 +1,26 @@
+h1 {
+	font-size: $font-size-base * 2;
+	font-weight: bold;
+	margin-bottom: $font-size-base * 1.25;
+
+	@include phone {
+		font-size: $font-size-base * 2.5;
+	}
+
+	@include laptop {
+		font-size: $font-size-base * 3.125;
+	}
+}
+
+h2 {
+	font-size: $font-size-base * 1.875;
+	margin: $bsu 0;
+	font-weight: bold;
+}
+
+a {
+	transition: color ease-in .2s;
+	&:hover {
+		color: #111111 !important;
+	}
+}
