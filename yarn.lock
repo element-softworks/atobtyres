@@ -670,6 +670,20 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@destinationstransfers/passkit@^6.5.0":
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/@destinationstransfers/passkit/-/passkit-6.5.0.tgz#5e838d5b65ce65e178d4989021237acd0b7799cb"
+  integrity sha512-8cvrVCOt7MLKuLvc9mQu0wufBLXXelGyK7XAaFtnzpAz0HSP1SqvMuK9oN1mTr0/Uv0oAJLI0FXbJXUJ/qs8Kg==
+  dependencies:
+    buffer-crc32 "0.2.13"
+    color-name "1.1.4"
+    do-not-zip "1.0.0"
+    event-iterator "1.2.0"
+    imagesize "1.0.0"
+    node-forge "0.8.5"
+    strip-json-comments "3.0.1"
+    yauzl "2.10.0"
+
 "@fortawesome/fontawesome-common-types@^0.2.19":
   version "0.2.19"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.19.tgz#754a0f85e1290858152e1c05700ab502b11197f1"
@@ -1751,7 +1765,7 @@ buffer-alloc@^1.2.0:
     buffer-alloc-unsafe "^1.1.0"
     buffer-fill "^1.0.0"
 
-buffer-crc32@~0.2.3:
+buffer-crc32@0.2.13, buffer-crc32@~0.2.3:
   version "0.2.13"
   resolved "https://registry.yarnpkg.com/buffer-crc32/-/buffer-crc32-0.2.13.tgz#0d333e3f00eac50aa1454abd30ef8c2a5d9a7242"
   integrity sha1-DTM+PwDqxQqhRUq9MO+MKl2ackI=
@@ -2129,7 +2143,7 @@ color-name@1.1.3:
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.3.tgz#a7d0558bd89c42f795dd42328f740831ca53bc25"
   integrity sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
 
-color-name@^1.0.0:
+color-name@1.1.4, color-name@^1.0.0:
   version "1.1.4"
   resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.4.tgz#c2a09a87acbde69543de6f63fa3995c826c536a2"
   integrity sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
@@ -2856,6 +2870,11 @@ dir-glob@^2.2.2:
   dependencies:
     path-type "^3.0.0"
 
+do-not-zip@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/do-not-zip/-/do-not-zip-1.0.0.tgz#cdced6c6352664ecb368f9fe7a15e1cb40c50c42"
+  integrity sha512-Pgd81ET43bhAGaN2Hq1zluSX1FmD7kl7KcV9ER/lawiLsRUB9pRA5y8r6us29Xk6BrINZETO8TjhYwtwafWUww==
+
 dom-converter@^0.2:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.2.0.tgz#6721a9daee2e293682955b6afe416771627bb768"
@@ -3119,6 +3138,11 @@ etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
+
+event-iterator@1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/event-iterator/-/event-iterator-1.2.0.tgz#2e71dc6ca56f1cf8ebcb2b9be7fdfd10acabbb76"
+  integrity sha512-Daq7YUl0Mv1i4QEgzGQlz0jrx7hUFNyLGbiF+Ap7NCMCjDLCCnolyj6s0TAc6HmrBziO5rNVHsPwGMp7KdRPvw==
 
 eventemitter3@^3.1.0:
   version "3.1.2"
@@ -4386,6 +4410,11 @@ imagemin@^6.1.0:
     p-pipe "^1.1.0"
     pify "^4.0.1"
     replace-ext "^1.0.0"
+
+imagesize@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/imagesize/-/imagesize-1.0.0.tgz#db161d15bf182a36d56e19abad10793c32c34c30"
+  integrity sha1-2xYdFb8YKjbVbhmrrRB5PDLDTDA=
 
 import-cwd@^2.0.0:
   version "2.1.0"
@@ -5701,6 +5730,11 @@ node-fetch@^2.3.0:
   version "2.6.0"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
   integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
+
+node-forge@0.8.5:
+  version "0.8.5"
+  resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.8.5.tgz#57906f07614dc72762c84cef442f427c0e1b86ee"
+  integrity sha512-vFMQIWt+J/7FLNyKouZ9TazT74PRV3wgv9UT4cRjC8BffxFbKXkgIWR42URCPSnHm/QDz6BOlb2Q0U4+VQT67Q==
 
 node-gyp@^3.8.0:
   version "3.8.0"
@@ -8055,6 +8089,11 @@ strip-indent@^1.0.1:
   dependencies:
     get-stdin "^4.0.1"
 
+strip-json-comments@3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-3.0.1.tgz#85713975a91fb87bf1b305cca77395e40d2a64a7"
+  integrity sha512-VTyMAUfdm047mwKl+u79WIdrZxtFtn+nBxHeb844XBQ9uMNTuTHdx2hc5RiAJYqwTj3wc/xe5HLSdJSkJ+WfZw==
+
 strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
@@ -9148,7 +9187,7 @@ yargs@^7.0.0:
     y18n "^3.2.1"
     yargs-parser "^5.0.0"
 
-yauzl@^2.4.2:
+yauzl@2.10.0, yauzl@^2.4.2:
   version "2.10.0"
   resolved "https://registry.yarnpkg.com/yauzl/-/yauzl-2.10.0.tgz#c7eb17c93e112cb1086fa6d8e51fb0667b79a5f9"
   integrity sha1-x+sXyT4RLLEIb6bY5R+wZnt5pfk=
