@@ -8,8 +8,8 @@
 const path = require('path');
 
 module.exports = {
-	siteName: 'Element Softworks',
-	siteDescription: 'Professional web and app development agency in Ipswich, England',
+	siteName: 'A to B Tyres Ltd',
+	siteDescription: 'A to B Tyres Ltd is a family run business based in Ipswich suppling, fitting and repairing Tyres for Cars, Vans and 4x4\'s. We offer a friendly and professional service supplying and fitting tyres in Ipswich Suffolk.',
 
 	plugins: [
 		{

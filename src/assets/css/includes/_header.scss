@@ -22,9 +22,10 @@ header {
 		}
 
 		img {
-			height: 30px;
+			height: 80px;
 			width: auto;
-			margin-right: $qsu;
+			margin-right: 7.5px;
+			margin-top: -10px;
 		}
 	}
 
@@ -123,7 +124,7 @@ header {
 				right: 0;
 				width: 0;
 				top: 100%;
-				background: $colour-accent-dark;
+				background: #E53333;
 				transition: width cubic-bezier(0.445, 0.05, 0.55, 0.95) .2s;
 			}
 
@@ -143,7 +144,7 @@ header {
 				}
 
 				&::before {
-					background: $colour-black;
+					background: #E53333;
 				}
 			}
 		}
@@ -206,10 +207,17 @@ header {
 }
 
 .portfolio-nav {
-	background: $colour-accent;
+	background: white;
 	header {
 		margin: 0 auto;
 		padding-top: 30px;
 		padding-bottom: 30px;
+
+		a {
+			color: white;
+			&:hover {
+				color: white !important;
+			}
+		}
 	}
 }

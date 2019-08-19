@@ -1,19 +1,117 @@
 <template>
 	<Layout>
 		<div class="about">
-			<Hero title="About Us">
-				<HeroGraphic slot="graphic"/>
-
-				<p>
-					We are dedicated team working on the latest technologies to serve our clients from
-					all around the world with bespoke and innovative solutions.
-				</p>
+			<Hero>
+				<div class="row justify-content-between">
+					<div class="col-md-4">
+						<h1><span class="marks">//</span>About Us</h1>
+						<p>
+							We are dedicated team working on the latest technologies to serve our clients from
+							all around the world with bespoke and innovative solutions.
+						</p>
+					</div>
+					<div class="col-md-3">
+						<g-image src="~/assets/img/about-us.png" class="img-fluid"/>
+					</div>
+				</div>
 			</Hero>
-		</div>
 
 
-		<div class="container">
-			<h1 class="py-5">Content</h1>
+			<div class="container">
+				<div class="bg">
+					<div class="row justify-content-center">
+						<div class="col-md-8 text-center">
+							<p>
+								Here at A to B tyres we are a family run business based in Ipswich, offering customers
+								in the
+								local
+								and
+								surrounding areas a friendly, professional and fast fit service. We have built our
+								reputation on
+								providing a fantastic customer experience through great service and exceptional prices.
+							</p>
+							<p>
+								We are dedicated
+								to servicing and supporting both privately owned and work vehicles. We aim to provide
+								the
+								highest
+								customer service to ensure you are completely satisfied. There is a comfortable waiting
+								room
+								with a
+								TV,
+								a selection of hot and cold drinks, free wifi and customer toilets available while you
+								wait. We
+								can
+								also
+								pick your car up from home or work if required.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="bg">
+					<h4 class="mb-5"><span class="marks">//</span>Who We Are</h4>
+					<div class="row team justify-content-center">
+						<div class="col-md-5">
+							<div class="row">
+								<div class="col-md-5 align-self-end">
+									<div class="member member-ben"/>
+								</div>
+								<div class="col-md-7 align-self-end">
+									<h5 style="text-align: left"><span class="marks">//</span>Ben Smythe</h5>
+									<p>Managing Director</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5">
+							<div class="row">
+								<div class="col-md-5 align-self-end">
+									<div class="member member-ben"></div>
+								</div>
+								<div class="col-md-7 align-self-end">
+									<h5 style="text-align: left"><span class="marks">//</span>A Guy</h5>
+									<p>Apprentice</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg bg-grey">
+				<div class="container">
+					<div class="row justify-content-center warranty">
+						<div class="col-md-8">
+							<h4 class="mb-5"><span class="marks">//</span>Warranty</h4>
+							<p align="center">
+								A to B Tyres offers you a 3 Year Tyre warranty with every tyre purchased. Your proof of
+								purchase will be issued to you. Every six months the following checks will be carried
+								out on your purchased tyres:
+							</p>
+							<p align="center">
+								Tyre Pressures<br>
+								Tread Depth<br>
+								Tyre Condition<br>
+								Wheel Balance<br>
+								Check Please<br>
+								bring your receipt along with you each time you visit us.
+							</p>
+
+							<p class="mt-5 pt-5">
+								<b class="marks">PLEASE NOTE:</b> The manufacture will need to examine any suspected
+								tyre fault before it can
+								be deemed as faulty, which can take around 4-6 weeks. Unfortunately this will mean that
+								we are unable to replace your purchased tyre until the manufacturer has accepted
+								liability. This may result in you having to purchase a new tyre while we await the
+								manufacturer’s decision.
+							</p>
+							<p>
+								If the manufacture deems the tyre faulty the replacement tyre
+								will be based on the equivalent cost and the amount of legal tread life remaining.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</Layout>
 </template>
@@ -56,55 +154,16 @@
 		},
 		data: function () {
 			return {
-				team: [
-					{
-						name: "Luke Brown",
-						position: "CEO and Full Stack Developer",
-						text1: "Since the start of this decade, Luke has been a full stack freelancer developer and systems administrator.",
-						text2: "In 2015, Luke founded Element Softworks, determined to build a reliable name for anyone in need of digital services locally and across the globe.",
-						img: "luke"
-					},
-					{
-						name: "Ryan Impey",
-						position: "Full Stack Developer",
-						text1: "Joining the team as the first full time employee, Ryan's entrance into the company marked a major milestone.",
-						text2: "His focus is on developing bespoke web systems along side Luke, primarily based on Reuben and Joe's designs, ready for a release the client can be proud of.",
-						img: "ryan"
-					},
-					{
-						name: "Reuben Westrop",
-						position: "Frontend/Graphic Designer",
-						text1: "Reuben joined the team to focus on prototyping and designing sites requested through our Merlin Panel project.",
-						text2: "His creativity builds from the client's requirements, onto his designs, ready to inspire the development team to make beautiful and engaging websites.",
-						img: "reuben"
-					},
-					// {
-					// 	name: "Ben Stacy",
-					// 	position: "Marketing Specialist",
-					// 	text1: "In today's modern world, marketing is everything. And it is important to have someone on your side who breaths this.",
-					// 	text2: "Ben works with a number of large US companies, focusing on their advertising, SEO and marketing outputs. And he is ready to help you on yours.",
-					// 	img: "ben"
-					// },
-					{
-						name: "Joe Methven",
-						position: "UX/UI Specialist",
-						text1: "Overseeing and directly impacting all creative design aspects (such as graphics, wireframes, UX) in any team is no easy task.",
-						text2: "Thankfully Joe is here with his wide knowledge of UX/UI and design spreading across over 100+ projects to help bring to life our clients dreams.",
-						img: "joe"
-					},
-					{
-						name: "Ben Smythe",
-						position: "Business Relations",
-						text1: "It is key to have someone who can truly connect and engage with existing and potential clients to find out their needs.",
-						text2: "Ben advises the business on the best routes to take with new and existing projects. He also puts in place strategies to find new clients keep their satisfaction high.",
-						img: "ben"
-					}
-				]
+				team: []
 			}
 		},
 	}
 </script>
 <style lang="scss">
+	@import '~assets/css/config';
+	@import '~assets/css/includes/responsive';
+	@import '~assets/css/includes/layout';
+
 	.animate {
 		-webkit-transition: all 300ms linear;
 		-moz-transition: all 300ms linear;
@@ -114,183 +173,35 @@
 	}
 
 	.about {
-		.card-team {
-			background: white;
-			border: 1px solid #efefef;
-			/*border: none;*/
-			.card-img-top {
-				background: #ccc;
-				min-height: 246px;
-				width: 100%;
-			}
-			h3 {
-				font-size: 20px;
-				padding: 20px 0 0;
-				font-weight: bold;
-			}
-			h4 {
-				font-size: 16px;
-				padding-bottom: 5px;
-				font-weight: bold;
-				opacity: 0.7;
-			}
-			.card-body {
-				padding-bottom: 50px;
-				max-height: 150px;
-				overflow: hidden;
-				background: white;
-				@extend .animate;
-			}
-			&:hover {
-				.card-body {
-					max-height: 370px;
-					overflow: hidden;
-					margin-top: -220px;
-				}
-			}
-			.squiggle {
-				padding-bottom: 10px;
-			}
+		.bg {
+			padding: 100px 0;
+		}
+		.team {
 			p {
-				/*opacity: 0.8;*/
+				margin-bottom: 0;
+				text-transform: uppercase;
+				font-size: 18px;
 			}
-		}
-		h1, h2, h3 {
-			font-weight: bold;
-		}
-		.squiggle {
-			max-width: 50px;
-		}
-
-		.cta {
-			background: #f8f8f8;
-		}
-	}
-
-	.about-team {
-		padding-top: 60px;
-		padding-bottom: 240px;
-		background: #f6f6f6;
-	}
-
-	.about-intro {
-		padding-top: 80px;
-		padding-bottom: 100px;
-
-		p {
-			font-size: 20px;
-		}
-	}
-
-	.about-stack {
-		padding-top: 60px;
-		margin-top: 0;
-		// padding-bottom: 60px;
-		.card {
-			margin-top: -200px;
-			background: white;
-			border: 1px solid #efefef;
-			border-radius: 0;
-			.card-header {
-				background: #facc00;
-				padding: 0;
-				border: none;
-
-				.card-header-pills {
-					margin-left: 0;
-					margin-right: 0;
-				}
-				.nav-item {
-					.nav-link {
-						&:hover {
-							background: rgba(255, 255, 255, 0.31);
-
-							&.active {
-								background: white !important;
-								cursor: default;
-							}
-						}
-
-						border-radius: 0;
-						padding: 22px 100px 10px;
-						text-align: center;
-						margin-bottom: 0;
-						height: 100%;
-						font-size: 20px;
-						font-weight: bold;
-
-					}
-
-					&:last-child {
-						.nav-link {
-							margin-bottom: 0.75rem;
-						}
-					}
-				}
-
+			h5 {
+				margin-bottom: 0;
 			}
-
-			.card-body {
-				padding: 80px;
-				.img-fluid {
-					padding-top: 10px;
+			.member {
+				width: 100%;
+				min-height: 170px;
+				&.member-ben {
+					background: url("~@/assets/img/ben.jpg") center / cover;
 				}
 			}
 		}
-		.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-			background: white;
-			color: #222;
-		}
-		a {
-			color: #222;
-		}
-		h4 {
-			font-weight: bold;
+
+		.warranty {
+			font-size: 18px;
 		}
 	}
 
 	// Extra small devices (portrait phones, less than 576px)
 	@media (max-width: 575.98px) {
-		.jumbotron.jumbotron-second {
-			padding-top: 50px !important;
-			.intro {
-				padding: 20px 0;
-				h1 {
-					padding-top: 0;
-				}
-			}
-			img {
-				min-height: 280px;
-				padding-top: 100px;
-			}
-		}
-		.about .card-team {
-			.card-body {
-				max-height: 370px;
-			}
-			&:hover {
-				.card-body {
-					max-height: 370px;
-					overflow: hidden;
-					margin-top: 0;
-				}
-			}
-		}
-		.about-stack {
-			.nav-pills {
-				.nav-item {
-					width: 100%;
-					.nav-link {
-						padding: 22px 100px !important;
-					}
-				}
-			}
-			.card {
-				.card-body {
-					padding: 15px;
-				}
-			}
-		}
+
 	}
 
 	// Small devices (landscape phones, less than 768px)

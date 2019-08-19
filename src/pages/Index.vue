@@ -1,5 +1,5 @@
 <template>
-	<Layout>
+	<Layout portfolioNav="true">
 		<div class="index">
 			<Hero clipped>
 				<h1><span class="marks">//</span>IPSWICH TYRE FITTING SERVICE</h1>
@@ -61,8 +61,9 @@
 					<h2 class="col-md-12 mb-5 mt-5"><span class="marks">//</span>Latest Jobs</h2>
 					<div class="row insta-posts">
 						<a v-for="post in posts" :key="posts.id" class="col-md-4" :href="post.link" target="_blank">
-							<div :style="'background: url(' + post.image + ')'" class="img-fluid"></div>
 							<span>{{post.date}}</span>
+							<div :style="'background: url(' + post.image + ') center / cover'" class="img-fluid"></div>
+							<span class="caption">{{post.captionNoTags}}</span>
 							<!--<pre>{{post}}</pre>-->
 						</a>
 					</div>
@@ -148,27 +149,6 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="bg">
-				<div class="container">
-					<div class="row justify-content-center">
-						<div class="col-md-6 opening">
-							<h4><span class="marks">//</span>Got Questions?</h4>
-							<div class="justify-content-center row">
-								<div class="col-md-4">
-									<phoneSVG/><br>
-									01473 269030
-								</div>
-								<div class="col-md-4">
-									<img src="/phone.svg"><br>
-									BSMYTHE@HOTMAIL.CO.UK
-								</div>
-								<div class="col-md-4"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 
 	</Layout>
@@ -179,7 +159,6 @@
 	import Hero from '~/components/Hero.vue'
 	import Services from '~/components/Services.vue'
 	import moment from 'moment';
-	import phoneSVG from 'phone.svg'
 
 	export default {
 		metaInfo: {
@@ -201,8 +180,7 @@
 		},
 		components: {
 			Hero,
-			Services,
-			phoneSVG
+			Services
 		},
 		data: function () {
 			return {
@@ -227,9 +205,13 @@
 				this.posts = response.data.slice(0, 3);
 
 				this.posts = this.posts.map(post => {
+					let postText = post.caption;
+					var regexp = new RegExp('#([^\\s]*)','g');
+					postText = postText.replace(regexp, '');
 					return {
 						...post,
-						date: moment.unix(post.time).format("MMM D")
+						date: moment.unix(post.time).format("MMM D"),
+						captionNoTags: postText,
 					}
 				})
 			})
@@ -274,13 +256,6 @@
 	@import '~assets/css/includes/responsive';
 	@import '~assets/css/includes/layout';
 
-	h1, h2, h3, h4 {
-		font-weight: bold;
-		@extend .animate;
-		text-align: center;
-		text-transform: uppercase;
-	}
-
 	.index {
 		h2 {
 			text-transform: uppercase;
@@ -300,7 +275,7 @@
 				position: absolute;
 				float: right;
 				bottom: 30px;
-				width: 100%;
+				right: 50px;
 				font-weight: bold;
 				a {
 					color: white;
@@ -322,14 +297,6 @@
 					padding: 20px 0;
 				}
 			}
-		}
-
-		.bg {
-			padding: 50px 0;
-		}
-
-		.bg-grey {
-			background: #F5F5F5;
 		}
 
 		.intro {
@@ -361,6 +328,20 @@
 				display: block;
 				letter-spacing: 0.9;
 				font-size: 18px;
+				&.caption {
+					text-transform: inherit;
+					padding-top: 10px;
+					font-size: 15px;
+					opacity: 0.7;
+					@extend .animate;
+				}
+			}
+			.col-md-4 {
+				&:hover {
+					.caption {
+						opacity: 1;
+					}
+				}
 			}
 		}
 

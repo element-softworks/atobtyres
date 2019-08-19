@@ -43,7 +43,7 @@
 		},
 		mounted() {
 			if (this.type === 'fitting') {
-				this.title = "Type Fitting";
+				this.title = "Tyre Fitting";
 				this.text = "Monotonectally innovate progressive manufactured products via ubiquitous opportunities. Credibly evisculate web-enabled core competencies without go forwardniche.";
 			} else if (this.type === 'puncture') {
 				this.title = "Puncture Repair";

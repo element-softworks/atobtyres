@@ -1,6 +1,5 @@
 .hero {
 	display: flex;
-	background: url('~@/assets/img/header.png') center / cover;
 	border-radius: 0;
 	margin-top: -130px;
 	height: 90vh;
@@ -9,14 +8,18 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 800px;
-	color: white;
+	color: #111;
+	background: url('~@/assets/img/bars.png') right / contain no-repeat #F5F5F5;
 
 	h1 {
 		font-weight: 900;
 		max-width: 650px;
-		text-align: center;
-		font-size: 70px;
+		text-align: left;
+		font-size: 50px;
 		letter-spacing: -4px;
+	}
+	p {
+		text-align: left;
 	}
 
 	.hero-container {
@@ -41,13 +44,26 @@
 		.hero-content {
 			flex-shrink: 1;
 			padding-left: 0;
-			max-width: 850px;
+			// max-width: 850px;
 			margin: auto;
 			text-align: center;
 		}
 	}
 
 	&.hero-clipped {
+		h1 {
+			font-weight: 900;
+			max-width: 650px;
+			text-align: center;
+			font-size: 70px;
+			letter-spacing: -4px;
+		}
+		p {
+			text-align: center;
+		}
+
+		background: url('~@/assets/img/header.png') center / cover;
+		color: white;
 		//clip-path: polygon(
 		//				0 0,
 		//				100% 0,

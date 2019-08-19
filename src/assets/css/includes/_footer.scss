@@ -1,6 +1,7 @@
 footer {
 	padding: 50px 0;
-	background: $colour-accent;
+	background: #171717;
+	color: white;
 
 	> span {
 		margin: 0 .35em;
@@ -41,8 +42,11 @@ footer {
 	}
 
 	a {
-		color: $colour-black;
+		color: white;
 		text-decoration: none;
+		&:hover {
+			color: #eee !important;
+		}
 	}
 
 	dl {
@@ -61,6 +65,7 @@ footer {
 			width: 15px;
 			height: auto;
 			margin-right: $qsu;
+			fill: white !important;
 		}
 
 		svg, span {
@@ -69,7 +74,7 @@ footer {
 	}
 
 	.footer-logo {
-		color: $colour-black;
+		color: white;
 		font-weight: bold;
 		text-decoration: none;
 		position: relative;
@@ -80,7 +85,7 @@ footer {
 		}
 
 		img {
-			height: 30px;
+			height: 57px;
 			width: auto;
 			margin-right: $qsu;
 		}
