@@ -18,14 +18,14 @@
 
 						<div class="col-md-4" v-for="office in offices" :key="office.name">
 							<div class="card card-office content-box mb-4">
-								<g-image src="~/assets/img/office-ipswich.png" v-if="office.name === 'Ipswich'"
-								         class="card-img-top" alt="..."/>
+								<!--<g-image src="~/assets/img/office-ipswich.png" v-if="office.name === 'Ipswich'"-->
+								         <!--class="card-img-top" alt="..."/>-->
 
-								<g-image src="~/assets/img/office-myrtlebeach.png" v-if="office.name === 'Myrtle Beach'"
-								         class="card-img-top" alt="..."/>
+								<!--<g-image src="~/assets/img/office-myrtlebeach.png" v-if="office.name === 'Myrtle Beach'"-->
+								         <!--class="card-img-top" alt="..."/>-->
 
-								<g-image src="~/assets/img/office-austin.png" v-if="office.name === 'Houston'"
-								         class="card-img-top" alt="..."/>
+								<!--<g-image src="~/assets/img/office-austin.png" v-if="office.name === 'Houston'"-->
+								         <!--class="card-img-top" alt="..."/>-->
 								<div class="card-body">
 									<h3>{{office.name}}</h3>
 									<h4>{{office.position}}</h4>

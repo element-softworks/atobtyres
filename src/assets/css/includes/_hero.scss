@@ -1,8 +1,6 @@
 .hero {
 	display: flex;
-	background-size: 180px 180px;
-	background-image: linear-gradient(to right, #6491dc 1px, transparent 1px),
-	linear-gradient(to bottom, #6491dc 1px, #6580dc 1px);
+	background: url('~@/assets/img/header.png') center / cover;
 	border-radius: 0;
 	margin-top: -130px;
 	height: 90vh;
@@ -11,6 +9,15 @@
 	justify-content: center;
 	align-items: center;
 	min-height: 800px;
+	color: white;
+
+	h1 {
+		font-weight: 900;
+		max-width: 650px;
+		text-align: center;
+		font-size: 70px;
+		letter-spacing: -4px;
+	}
 
 	.hero-container {
 		@include container;
@@ -35,16 +42,18 @@
 			flex-shrink: 1;
 			padding-left: 0;
 			max-width: 850px;
+			margin: auto;
+			text-align: center;
 		}
 	}
 
 	&.hero-clipped {
-		clip-path: polygon(
-						0 0,
-						100% 0,
-						100% 100%,
-						0 calc(100% - 7vw)
-		);
+		//clip-path: polygon(
+		//				0 0,
+		//				100% 0,
+		//				100% 100%,
+		//				0 calc(100% - 7vw)
+		//);
 	}
 
 	&:not(.hero-clipped) {
@@ -65,8 +74,8 @@
 			}
 
 			.hero-content {
-				padding-left: $bsu * 2;
-				max-width: none;
+				// padding-left: $bsu * 2;
+				//max-width: none;
 			}
 		}
 	}

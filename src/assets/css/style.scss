@@ -1,6 +1,7 @@
 @import 'config';
 @import '~bootstrap/scss/bootstrap';
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+@import url("https://use.typekit.net/zfh6byd.css");
+
 
 @import 'includes/responsive';
 @import 'includes/layout';
@@ -12,7 +13,7 @@
 @import 'includes/button';
 
 * {
-	font-family: 'Lato', sans-serif;
+	font-family: benton-sans,sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -21,4 +22,8 @@ svg {
 	height: auto;
 	width: 100%;
 	overflow: visible;
+}
+
+.marks {
+	color: #E53333;
 }

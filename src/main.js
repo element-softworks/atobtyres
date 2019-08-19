@@ -12,6 +12,8 @@ import BootstrapVue from 'bootstrap-vue'
 import * as VueGoogleMaps from 'vue2-google-maps'
 import GridsomeScrollReveal from 'gridsome-scroll-reveal';
 
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 export default function (Vue, {router, head, appOptions, isClient, isServer}) {
@@ -20,6 +22,7 @@ export default function (Vue, {router, head, appOptions, isClient, isServer}) {
 	Vue.component('Layout', DefaultLayout);
 	Vue.use(BootstrapVue);
 
+	Vue.use(VueAxios, axios);
 	Vue.use(VueGoogleMaps, {
 		load: {
 			key: 'AIzaSyCX8we6CerUwx2abd85WX25afOU8nrCLzM',
