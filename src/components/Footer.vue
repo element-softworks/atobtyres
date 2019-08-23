@@ -42,28 +42,6 @@
 	</div>
 </template>
 
-<static-query>
-	{
-	links: allPortfolioItem(filter: { published: { eq: true } }, limit: 5) {
-	edges {
-	node {
-	title
-	path
-	}
-	}
-	},
-	bloglinks: allBlogItem(filter: { published: { eq: true } }, limit: 3) {
-	edges {
-	node {
-	title
-	path
-	}
-	}
-	}
-	}
-
-</static-query>
-
 <script>
 	import config from 'config';
 	import phoneSVG from 'phone.svg'

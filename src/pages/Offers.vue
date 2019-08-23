@@ -21,8 +21,10 @@
 				<div class="bg">
 					<div class="row justify-content-center">
 						<div class="col-md-5 text-center card-offers">
-							<div class="card">
-								<div class="card-header"></div>
+							<a class="card" href="/offer/services">
+								<div class="card-header">
+									<img src="~/assets/img/qr-services.png" class="qr">
+								</div>
 								<div class="card-body">
 									<div class="row">
 										<div class="col-md-5">
@@ -33,17 +35,19 @@
 										</div>
 										<div class="col-md-12">
 											<p>
-												20% off for public service employees. To Reedem, present your in-date
+												20% off for public service employees. To Redeem, present your in-date
 												employer ID
 											</p>
 										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="col-md-5 text-center card-offers">
-							<div class="card">
-								<div class="card-header"></div>
+							<a class="card" href="/offer/student">
+								<div class="card-header">
+									<img src="~/assets/img/qr-student.png" class="qr">
+								</div>
 								<div class="card-body">
 									<div class="row">
 										<div class="col-md-5">
@@ -54,17 +58,19 @@
 										</div>
 										<div class="col-md-12">
 											<p>
-												20% off for students. To Reedem, present your valid
+												20% off for students. To Redeem, present your valid
 												university or school ID card
 											</p>
 										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="col-md-5 text-center card-offers">
-							<div class="card">
-								<div class="card-header"></div>
+							<a class="card" href="/offer/company">
+								<div class="card-header">
+									<img src="~/assets/img/qr-company.png" class="qr">
+								</div>
 								<div class="card-body">
 									<div class="row">
 										<div class="col-md-5">
@@ -81,11 +87,13 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 						<div class="col-md-5 text-center card-offers">
-							<div class="card">
-								<div class="card-header"></div>
+							<a class="card" href="/offer/friend">
+								<div class="card-header">
+									<img src="~/assets/img/qr-friend.png" class="qr">
+								</div>
 								<div class="card-body">
 									<div class="row">
 										<div class="col-md-5">
@@ -102,7 +110,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 
 					</div>
@@ -182,8 +190,20 @@
 					background: #fdfdfd;
 					border-radius: 0;
 					border: 0;
+
+					img {
+						width: 30%;
+						margin: 20px 20px 0;
+						display: block;
+					}
+				}
+				&:hover {
+					text-decoration: none;
+					box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 				}
 				.card-body {
+					text-decoration: none;
+					color: #111 !important;
 					background: #FAFAFA;
 					h2 {
 						font-size: 50px;
@@ -208,22 +228,22 @@
 				}
 			}
 
-			&:nth-of-type(1) {
+			&:nth-of-type(1), .card-Services {
 				.card-header {
 					background: url("~@/assets/img/deal-cyan-bars.png") right / contain no-repeat #fdfdfd;
 				}
 			}
-			&:nth-of-type(2) {
+			&:nth-of-type(2), .card-Student {
 				.card-header {
 					background: url("~@/assets/img/deal-blue-bars.png") right / contain no-repeat #fdfdfd;
 				}
 			}
-			&:nth-of-type(3) {
+			&:nth-of-type(3), .card-Company {
 				.card-header {
 					background: url("~@/assets/img/deal-green-bars.png") right / contain no-repeat #fdfdfd;
 				}
 			}
-			&:nth-of-type(4) {
+			&:nth-of-type(4), .card-Friend {
 				.card-header {
 					background: url("~@/assets/img/deal-yellow-bars.png") right / contain no-repeat #fdfdfd;
 				}

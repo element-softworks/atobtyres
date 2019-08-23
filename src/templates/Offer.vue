@@ -1,95 +1,39 @@
 <template>
 	<Layout>
 		<div class="offers">
-			{{$id}}
+			<Hero style="min-height: 200px;">
+				<div class="row">
+					<div class="col-12">
+						<h1><span class="marks">//</span>Offer</h1>
+					</div>
+				</div>
+			</Hero>
 			<div class="container">
-				<div class="bg">
+				<div class="mt-5 mb-3">
 					<div class="row justify-content-center">
+						<div class="col-md-12 text-center card-offers mb-3">
+							Token ID: <b class="text-uppercase">{{token}}</b>
+						</div>
 						<div class="col-md-5 text-center card-offers">
-							<div class="card">
-								<div class="card-header"></div>
+							<div :class="'card card-' + $page.offer.title">
+								<div class="card-header" style="min-height: 50px;"></div>
 								<div class="card-body">
 									<div class="row">
 										<div class="col-md-5">
-											<h2 class="marks">20%</h2>
+											<h2 class="marks">{{$page.offer.amount}}</h2>
 										</div>
 										<div class="col-md-7">
-											<h4><span class="marks">//</span>Public service employees</h4>
+											<h4><span class="marks">//</span>{{$page.offer.displayTitle}}</h4>
 										</div>
 										<div class="col-md-12">
 											<p>
-												20% off for public service employees. To Reedem, present your in-date
-												employer ID
+												{{$page.offer.short}}
 											</p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-						<!--<div class="col-md-5 text-center card-offers">-->
-						<!--<div class="card">-->
-						<!--<div class="card-header"></div>-->
-						<!--<div class="card-body">-->
-						<!--<div class="row">-->
-						<!--<div class="col-md-5">-->
-						<!--<h2 class="marks">20%</h2>-->
-						<!--</div>-->
-						<!--<div class="col-md-7">-->
-						<!--<h4><span class="marks">//</span>Uni and College Students</h4>-->
-						<!--</div>-->
-						<!--<div class="col-md-12">-->
-						<!--<p>-->
-						<!--20% off for students. To Reedem, present your valid-->
-						<!--university or school ID card-->
-						<!--</p>-->
-						<!--</div>-->
-						<!--</div>-->
-						<!--</div>-->
-						<!--</div>-->
-						<!--</div>-->
-						<!--<div class="col-md-5 text-center card-offers">-->
-						<!--<div class="card">-->
-						<!--<div class="card-header"></div>-->
-						<!--<div class="card-body">-->
-						<!--<div class="row">-->
-						<!--<div class="col-md-5">-->
-						<!--<h2 class="marks">£££</h2>-->
-						<!--</div>-->
-						<!--<div class="col-md-7">-->
-						<!--<h4><span class="marks">//</span>Company/work cars and vans</h4>-->
-						<!--</div>-->
-						<!--<div class="col-md-12">-->
-						<!--<p>-->
-						<!--Discounted rates for company vehicles, get in touch in advance-->
-						<!--to discuss options-->
-						<!--</p>-->
-						<!--</div>-->
-						<!--</div>-->
-						<!--</div>-->
-						<!--</div>-->
-						<!--</div>-->
-						<!--<div class="col-md-5 text-center card-offers">-->
-						<!--<div class="card">-->
-						<!--<div class="card-header"></div>-->
-						<!--<div class="card-body">-->
-						<!--<div class="row">-->
-						<!--<div class="col-md-5">-->
-						<!--<h2 class="marks">10%</h2>-->
-						<!--</div>-->
-						<!--<div class="col-md-7">-->
-						<!--<h4><span class="marks">//</span>Recommend a friend</h4>-->
-						<!--</div>-->
-						<!--<div class="col-md-12">-->
-						<!--<p>-->
-						<!--Receive 10% off your next tyre by telling us who you referred-->
-						<!--to us on your next visit-->
-						<!--</p>-->
-						<!--</div>-->
-						<!--</div>-->
-						<!--</div>-->
-						<!--</div>-->
-						<!--</div>-->
-
 					</div>
 				</div>
 			</div>
@@ -97,9 +41,25 @@
 	</Layout>
 </template>
 
+<page-query>
+	query Offer($id: String!) {
+	offer(id: $id) {
+	title,
+	id,
+	short,
+	amount,
+	displayTitle
+	}
+	}
+
+</page-query>
+
 <script>
 	import config from 'config';
 	import Hero from '~/components/Hero.vue'
+	import moment from 'moment';
+	import hash from 'object-hash';
+
 
 	export default {
 		metaInfo: {
@@ -122,6 +82,7 @@
 			Hero
 		},
 		mounted() {
+			this.token = hash(moment(new Date()).format("dddd, MMMM Do YYYY, h") + this.$page.offer.title).substr(0, 10);
 		},
 		methods: {
 			message: function () {
@@ -135,7 +96,8 @@
 		},
 		data: function () {
 			return {
-				team: []
+				team: [],
+				token: ''
 			}
 		},
 	}

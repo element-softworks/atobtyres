@@ -12,48 +12,48 @@ module.exports = {
 	siteDescription: 'A to B Tyres Ltd is a family run business based in Ipswich suppling, fitting and repairing Tyres for Cars, Vans and 4x4\'s. We offer a friendly and professional service supplying and fitting tyres in Ipswich Suffolk.',
 
 	plugins: [
+		// {
+		// 	// Create posts from markdown files
+		// 	use: '@gridsome/source-filesystem',
+		// 	options: {
+		// 		typeName: 'PortfolioItem',
+		// 		path: 'content/posts/*.md',
+		// 		route: '/portfolio/:slug',
+		// 		refs: {
+		// 			// Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+		// 			services: {
+		// 				typeName: 'Service',
+		// 				route: '/service/:id',
+		// 				create: true
+		// 			}
+		// 		}
+		// 	}
+		// },
 		{
-			// Create posts from markdown files
 			use: '@gridsome/source-filesystem',
 			options: {
-				typeName: 'PortfolioItem',
-				path: 'content/posts/*.md',
-				route: '/portfolio/:slug',
-				refs: {
-					// Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
-					services: {
-						typeName: 'Service',
-						route: '/service/:id',
-						create: true
-					}
-				}
-			}
-		},
-		{
-			use: '@gridsome/source-filesystem',
-			options: {
-				path: 'offers/**/*.md',
 				typeName: 'Offer',
-				route: '/offer/:id'
+				path: 'content/offers/*.md',
+				route: '/offer/:slug'
 			}
 		},
-		{
-			// Create posts from markdown files
-			use: '@gridsome/source-filesystem',
-			options: {
-				typeName: 'BlogItem',
-				path: 'content/blogs/*.md',
-				route: '/blog/:slug',
-				refs: {
-					// Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
-					tags: {
-						typeName: 'Tag',
-						route: '/tag/:id',
-						create: true
-					}
-				}
-			}
-		},
+		// {
+		// 	// Create posts from markdown files
+		// 	use: '@gridsome/source-filesystem',
+		// 	options: {
+		// 		typeName: 'BlogItem',
+		// 		path: 'content/blogs/*.md',
+		// 		route: '/blog/:slug',
+		// 		refs: {
+		// 			// Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+		// 			tags: {
+		// 				typeName: 'Tag',
+		// 				route: '/tag/:id',
+		// 				create: true
+		// 			}
+		// 		}
+		// 	}
+		// },
 		{
 			use: '@gridsome/plugin-google-analytics',
 			options: {
