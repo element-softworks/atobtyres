@@ -3,14 +3,14 @@
 		<div class="contact-us">
 			<Hero>
 				<div class="row justify-content-between">
-					<div class="col-md-5">
+					<div class="col-md-4 col-sm-8">
 						<h1><span class="marks">//</span>Contact Us</h1>
 						<p>
 							We're friendly people wanting to help get you back on the road. Get in touch today to get
 							your car booked in. We usually can do same day and next day fittings.
 						</p>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-4">
 						<g-image src="~/assets/img/about-us.png" class="img-fluid"/>
 					</div>
 				</div>

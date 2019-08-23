@@ -3,14 +3,14 @@
 		<div class="about">
 			<Hero>
 				<div class="row justify-content-between">
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-8">
 						<h1><span class="marks">//</span>About Us</h1>
 						<p>
 							We are dedicated team working to help our clients with tyre fittings, repairs and more,
 							striving for excellent customer service.
 						</p>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-4">
 						<g-image src="~/assets/img/about-us.png" class="img-fluid" style="margin: -85px auto;"/>
 					</div>
 				</div>

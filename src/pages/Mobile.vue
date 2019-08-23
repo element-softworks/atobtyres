@@ -3,84 +3,83 @@
 		<div class="mobile-fitting">
 			<Hero>
 				<div class="row justify-content-between">
-					<div class="col-md-5">
+					<div class="col-md-4 col-sm-7">
 						<h1><span class="marks">//</span>Mobile</h1>
 						<p>
 							Full Mobile Tyre Fitting Service. Same day mobile tyre services at your home, work or
 							roadside assistance to get you back on the road.
 						</p>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-5">
 						<g-image src="~/assets/img/van.png" class="img-fluid" style="margin: -100px;"/>
 					</div>
 				</div>
 			</Hero>
 			<div>
 				<div class="container">
-					<div class="row justify-content-center">
-						<div class="row main-text">
-							<div class="col-md-12">
-								<h2><span class="marks">//</span>Convenient</h2>
-								<p>
-									Tyre problems are a nightmare, and have a nasty habit of happening when they are
-									least
-									convenient.
-									However, at A to B Tyres, we have a large range of machinery to get you back on the
-									road.
-									Whether it's at your home, your work or on the roadside, we're here to help.
-								</p>
-							</div>
-							<div class="col-md-12">
-								<h2><span class="marks">//</span>Affordable</h2>
-								<p>
-									We are a family run business and we have over 40 years experience in fixing and
-									replacing tyres
-									of all sizes. We know how annoying tyre issues can be, and that's why we'd love to
-									help, at
-									very affordable prices in Ipswich, Suffolk.
-								</p>
-							</div>
-							<div class="col-md-12 mb-3">
-								<h2><span class="marks">//</span>Same day call out and fitting</h2>
-								<p>
-									We understand your time is important, that's why as soon as one of our fitters is
-									available
-									they will come to your assistance the same day. We have a large number of tyres in
-									stock for
-									instant fitting, and if you order before 11am we can fit any tyre for same day
-									delivery.
-								</p>
-							</div>
+					<div class="row justify-content-center main-text">
+						<div class="col-md-12">
+							<h2><span class="marks">//</span>Convenient</h2>
+							<p>
+								Tyre problems are a nightmare, and have a nasty habit of happening when they are
+								least
+								convenient.
+								However, at A to B Tyres, we have a large range of machinery to get you back on the
+								road.
+								Whether it's at your home, your work or on the roadside, we're here to help.
+							</p>
 						</div>
-						<div class="row">
-							<div class="col-md-4">
-								<img class="img-fluid" src="~/assets/img/mobile-1.jpg">
-							</div>
-							<div class="col-md-4">
-								<img class="img-fluid" src="~/assets/img/mobile-2.jpg">
-							</div>
-							<div class="col-md-4">
-								<img class="img-fluid" src="~/assets/img/mobile-3.jpg">
-							</div>
-							<div class="col-md-12">
-								<b>
-									We offer tyres fitting, tyre repairs, puncture repairs, leverless fitting, fixing
-									cracked rims, replacing TPMS valves and other services both in our warehouse and on
-									the road.
-								</b>
-							</div>
+						<div class="col-md-12">
+							<h2><span class="marks">//</span>Affordable</h2>
+							<p>
+								We are a family run business and we have over 40 years experience in fixing and
+								replacing tyres
+								of all sizes. We know how annoying tyre issues can be, and that's why we'd love to
+								help, at
+								very affordable prices in Ipswich, Suffolk.
+							</p>
+						</div>
+						<div class="col-md-12 mb-3">
+							<h2><span class="marks">//</span>Same day call out and fitting</h2>
+							<p>
+								We understand your time is important, that's why as soon as one of our fitters is
+								available
+								they will come to your assistance the same day. We have a large number of tyres in
+								stock for
+								instant fitting, and if you order before 11am we can fit any tyre for same day
+								delivery.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<img class="img-fluid" src="~/assets/img/mobile-1.jpg">
+						</div>
+						<div class="col-md-4">
+							<img class="img-fluid" src="~/assets/img/mobile-2.jpg">
+						</div>
+						<div class="col-md-4">
+							<img class="img-fluid" src="~/assets/img/mobile-3.jpg">
+						</div>
+						<div class="col-md-12">
+							<b>
+								We offer tyres fitting, tyre repairs, puncture repairs, leverless fitting, fixing
+								cracked rims, replacing TPMS valves and other services both in our warehouse and on
+								the road.
+							</b>
 						</div>
 					</div>
 				</div>
 			</div>
-			<ClientOnly>
-				<GmapMap
-						ref="mapRef"
-						:center="{lat,lng}"
-						:zoom="16"
-						map-type-id="terrain"
-						style="width: 100%; height: 400px"
-						:options="{
+		</div>
+		<ClientOnly>
+			<GmapMap
+					ref="mapRef"
+					:center="{lat,lng}"
+					:zoom="16"
+					map-type-id="terrain"
+					style="width: 100%; height: 400px"
+					:options="{
 						   zoomControl: true,
 						   mapTypeControl: false,
 						   scaleControl: false,
@@ -89,18 +88,18 @@
 						   fullscreenControl: false,
 						   disableDefaultUi: true
 						 }"
-				>
-					<GmapMarker
-							:key="index"
-							v-for="(m, index) in markers"
-							:position="m.position"
-							:clickable="true"
-							:draggable="true"
-							icon="http://localhost:8080/assets/static/src/assets/img/logo.png?width=30"
-							@click="center=m.position"
-					/>
-				</GmapMap>
-			</ClientOnly>
+			>
+				<GmapMarker
+						:key="index"
+						v-for="(m, index) in markers"
+						:position="m.position"
+						:clickable="true"
+						:draggable="true"
+						icon="http://localhost:8080/assets/static/src/assets/img/logo.png?width=30"
+						@click="center=m.position"
+				/>
+			</GmapMap>
+		</ClientOnly>
 		</div>
 	</Layout>
 </template>

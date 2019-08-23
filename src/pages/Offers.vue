@@ -3,14 +3,14 @@
 		<div class="offers">
 			<Hero>
 				<div class="row justify-content-between">
-					<div class="col-md-4">
+					<div class="col-md-4 col-sm-6">
 						<h1><span class="marks">//</span>Offers</h1>
 						<p>
 							Scan the QR code or follow through the link, print out the offer page and bring it to your
 							next purchase as A to B Tyres.
 						</p>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-6">
 						<g-image src="~/assets/img/offers.png" class="img-fluid" style="margin: -50px;"/>
 					</div>
 				</div>
