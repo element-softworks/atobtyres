@@ -1,6 +1,6 @@
 <template>
 	<div>
-	<div class="bg">
+	<div class="bg bg-grey">
 		<div class="container">
 			<div class="row justify-content-center contact-info">
 				<div class="col-12">
@@ -127,6 +127,11 @@
 		footer {
 			.footer-content > * {
 				margin: 15px 0 !important;
+			}
+		}
+		.contact-info {
+			.col-md-3 {
+				margin-top: 30px;
 			}
 		}
 	}

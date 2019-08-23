@@ -6,49 +6,40 @@
 					<div class="col-md-4">
 						<h1><span class="marks">//</span>About Us</h1>
 						<p>
-							We are dedicated team working on the latest technologies to serve our clients from
-							all around the world with bespoke and innovative solutions.
+							We are dedicated team working to help our clients with tyre fittings, repairs and more,
+							striving for excellent customer service.
 						</p>
 					</div>
-					<div class="col-md-3">
-						<g-image src="~/assets/img/about-us.png" class="img-fluid"/>
+					<div class="col-md-4">
+						<g-image src="~/assets/img/about-us.png" class="img-fluid" style="margin: -85px auto;"/>
 					</div>
 				</div>
 			</Hero>
 
 
-			<div class="container">
-				<div class="bg">
+			<div class="bg">
+				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-md-8 text-center">
 							<p>
 								Here at A to B tyres we are a family run business based in Ipswich, offering customers
-								in the
-								local
-								and
-								surrounding areas a friendly, professional and fast fit service. We have built our
-								reputation on
-								providing a fantastic customer experience through great service and exceptional prices.
+								in the local and surrounding areas a friendly, professional and fast fit service. We
+								have built our reputation on providing a fantastic customer experience through great
+								service and exceptional prices.
 							</p>
 							<p>
-								We are dedicated
-								to servicing and supporting both privately owned and work vehicles. We aim to provide
-								the
-								highest
-								customer service to ensure you are completely satisfied. There is a comfortable waiting
-								room
-								with a
-								TV,
-								a selection of hot and cold drinks, free wifi and customer toilets available while you
-								wait. We
-								can
-								also
-								pick your car up from home or work if required.
+								We are dedicated to servicing and supporting both privately owned and work vehicles. We
+								aim to provide the highest customer service to ensure you are completely satisfied.
+								There is a comfortable waiting room with a TV, a selection of hot and cold drinks, free
+								wifi and customer toilets available while you wait. We can also pick your car up from
+								home or work if required.
 							</p>
 						</div>
 					</div>
 				</div>
-				<div class="bg">
+			</div>
+			<div class="bg bg-grey">
+				<div class="container">
 					<h4 class="mb-5"><span class="marks">//</span>Who We Are</h4>
 					<div class="row team justify-content-center">
 						<div class="col-md-5">
@@ -76,7 +67,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="bg bg-grey">
+			<div class="bg">
 				<div class="container">
 					<div class="row justify-content-center warranty">
 						<div class="col-md-8">

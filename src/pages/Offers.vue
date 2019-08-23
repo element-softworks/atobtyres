@@ -10,8 +10,8 @@
 							next purchase as A to B Tyres.
 						</p>
 					</div>
-					<div class="col-md-5">
-						<g-image src="~/assets/img/offers.png" class="img-fluid"/>
+					<div class="col-md-6">
+						<g-image src="~/assets/img/offers.png" class="img-fluid" style="margin: -50px;"/>
 					</div>
 				</div>
 			</Hero>
@@ -50,7 +50,7 @@
 											<h2 class="marks">20%</h2>
 										</div>
 										<div class="col-md-7">
-											<h4><span class="marks">//</span>Students</h4>
+											<h4><span class="marks">//</span>Uni and College Students</h4>
 										</div>
 										<div class="col-md-12">
 											<p>
@@ -137,35 +137,6 @@
 			Hero
 		},
 		mounted() {
-// Create a Template from local folder, see __test__/resources/passes for examples
-// .load will load all fields from pass.json,
-// as well as all images and com.example.passbook.pem file as key
-// and localization string too
-			const template = await Template.load(
-				"./path/to/templateFolder",
-				"secretKeyPasswod"
-			);
-
-// or
-// create a Template from a Buffer with ZIP content
-			const s3 = new AWS.S3({ apiVersion: "2006-03-01", region: "us-west-2" });
-			const s3file = await s3
-				.getObject({
-					Bucket: "bucket",
-					Key: "pass-template.zip"
-				})
-				.promise();
-			const template = await Template.fromBuffer(s3file.Body);
-
-// or create it manually
-			const template = new Template("coupon", {
-				passTypeIdentifier: "pass.com.example.passbook",
-				teamIdentifier: "MXL",
-				backgroundColor: "red",
-				sharingProhibited: true
-			});
-			await template.images.add("icon", iconPngFileBuffer)
-				.add("logo", pathToLogoPNGfile)
 		},
 		methods: {
 			message: function () {

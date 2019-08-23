@@ -15,11 +15,11 @@
 				</div>
 			</Hero>
 			<div class="container">
-				<div class="row icons d-flex align-items-center">
-					<div class="col-md-2">
+				<div class="row icons d-flex align-items-center justify-content-center">
+					<div class="col-md-2 col-4">
 						<g-image src="~/assets/img/brand-toyo.png" class="img-fluid"/>
 					</div>
-					<div class="col-md-2">
+					<div class="col-md-2 col-xs-4">
 						<g-image src="~/assets/img/brand-michelin.png" class="img-fluid"/>
 					</div>
 					<div class="col-md-2">
@@ -43,12 +43,9 @@
 							<div class="justify-content-center row">
 								<p class="intro">
 									A to B Tyres Ltd is a family run business in Ipswich. We offer a friendly and
-									professional
-									service supplying and fitting tyres to enable you to keep your vehicle running
-									smoothly,
-									efficiently, economically and legally. We carry an extensive range of tyres which
-									range
-									from top premium tyres, mid-range and budget tyres.
+									professional service supplying and fitting tyres to enable you to keep your vehicle
+									running smoothly, efficiently, economically and legally. We carry an extensive range
+									of tyres which range from top premium tyres, mid-range and budget tyres.
 								</p>
 								<div class="btn btn-dark">View More</div>
 							</div>
@@ -56,17 +53,9 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="bg">
 				<div class="container">
-					<h2 class="col-md-12 mb-5 mt-5"><span class="marks">//</span>Latest Jobs</h2>
-					<div class="row insta-posts">
-						<a v-for="post in posts" :key="posts.id" class="col-md-4" :href="post.link" target="_blank">
-							<span>{{post.date}}</span>
-							<div :style="'background: url(' + post.image + ') center / cover'" class="img-fluid"></div>
-							<span class="caption">{{post.captionNoTags}}</span>
-							<!--<pre>{{post}}</pre>-->
-						</a>
-					</div>
 					<div class="row mt-5 pt-5 services">
 						<h2 class="col-md-12 mb-5"><span class="marks">//</span>Our Services</h2>
 						<Services type="fitting" class="col-md-4"></Services>
@@ -80,6 +69,20 @@
 			</div>
 
 			<div class="bg bg-grey">
+				<div class="container">
+					<h2 class="col-md-12 mb-5 mt-5"><span class="marks">//</span>Latest Jobs</h2>
+					<div class="row insta-posts">
+						<a v-for="post in posts" :key="posts.id" class="col-md-4" :href="post.link" target="_blank">
+							<span>{{post.date}}</span>
+							<div :style="'background: url(' + post.image + ') center / cover'" class="img-fluid"></div>
+							<span class="caption">{{post.captionNoTags}}</span>
+							<!--<pre>{{post}}</pre>-->
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-md-6 opening">
@@ -206,7 +209,7 @@
 
 				this.posts = this.posts.map(post => {
 					let postText = post.caption;
-					var regexp = new RegExp('#([^\\s]*)','g');
+					var regexp = new RegExp('#([^\\s]*)', 'g');
 					postText = postText.replace(regexp, '');
 					return {
 						...post,
@@ -239,9 +242,9 @@
 				],
 				offices: [
 					{
-						name: "Ipswich",
+						name: "",
 						position: "Main Office",
-						text1: "Ipswich Waterfront Innovation Centre<br>The Atrium, UoS<br> Ipswich, Suffolk<br>IP4 1QJ, United Kingdom",
+						text1: "Kingdom",
 						lat: 52.058529,
 						lng: 1.125027,
 					},
@@ -372,5 +375,61 @@
 		h4 {
 			margin-bottom: 40px;
 		}
+	}
+
+	// Extra small devices (portrait phones, less than 576px)
+	@media (max-width: 575.98px) {
+		.hero.hero-clipped {
+			height: 80vh;
+			min-height: 500px;
+			h1 {
+				font-size: 50px;
+			}
+			.phone {
+				right: auto;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100%;
+			}
+		}
+		.index {
+			.intro {
+				padding: 30px
+			}
+			.services {
+				padding: 0 !important;
+			}
+			.insta-posts {
+				span {
+					padding-top: 30px;
+				}
+			}
+
+			.icons {
+				.col-md-2 {
+					width: 33.32%;
+					flex: 0 0 33.32%;
+					max-width: 33.32%;
+					img {
+						padding: 20px 0;
+					}
+				}
+			}
+		}
+	}
+
+	// Small devices (landscape phones, less than 768px)
+	@media (max-width: 767.98px) {
+
+	}
+
+	// Medium devices (tablets, less than 992px)
+	@media (max-width: 991.98px) {
+
+	}
+
+	// Large devices (desktops, less than 1200px)
+	@media (max-width: 1199.98px) {
+
 	}
 </style>

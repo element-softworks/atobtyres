@@ -1,5 +1,5 @@
 <template>
-	<Layout :portfolioNav="true">
+	<Layout :portfolioNav="false">
 		<div class="a404">
 			<div class="container">
 				<h1>404</h1>
@@ -12,7 +12,7 @@
 					<div class="col-md-12">
 						<h2>Think this page should work?</h2>
 						<h3>Let us know by getting in touch below, we'd really appreciate it!</h3>
-						<a href="mailto:team@elementsoftworks.co.uk?subject=Website Error"
+						<a href="mailto:BSMYTHE@HOTMAIL.CO.UK?subject=Website Error"
 						   class="btn btn-primary">Email us</a>
 						<a href="#" v-on:click="message" class="btn btn-secondary">Open chat</a>
 					</div>

@@ -23,8 +23,8 @@
 					<li><g-link to="/" exact class="mobile-navigation-item">Home</g-link></li>
 					<li><g-link to="/about">About</g-link></li>
 					<li><g-link to="/offers">Offers</g-link></li>
-					<li><g-link to="/portfolio">Portfolio</g-link></li>
-					<li><g-link to="/contact">Contact</g-link></li>
+					<li><g-link to="/mobile">Mobile Fitting</g-link></li>
+					<li><g-link to="/contact">Contact Us</g-link></li>
 				</ul>
 			</nav>
 		</header>

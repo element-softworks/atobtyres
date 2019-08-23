@@ -82,7 +82,7 @@ header {
 		bottom: 0;
 		right: 0;
 		left: 0;
-		background: $colour-accent;
+		background: #111;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -202,6 +202,24 @@ header {
 					display: none;
 				}
 			}
+		}
+	}
+}
+
+@media (max-width: 575.98px) {
+	.portfolio-nav {
+		.header-mobile-navigation-toggle {
+			color: white;
+		}
+	}
+
+	.header-mobile-navigation-close {
+		color: white;
+	}
+	header {
+		nav a {
+			color: white;
+			font-size: 2.3rem;
 		}
 	}
 }

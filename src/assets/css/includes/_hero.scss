@@ -95,4 +95,14 @@
 			}
 		}
 	}
+
+
+	// Extra small devices (portrait phones, less than 576px)
+	@media (max-width: 575.98px) {
+		// margin-top: -180px;
+		background: #F5F5F5;
+		.img-fluid {
+			margin: 0 !important;
+		}
+	}
 }

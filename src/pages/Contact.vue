@@ -1,47 +1,84 @@
 <template>
 	<Layout>
 		<div class="contact-us">
-			<Hero title="Contact">
-				<HeroGraphic slot="graphic"/>
-
-				<p>
-					We're friendly people! So please get in touch if you want to know more about any of
-					our services that we offer or if you want some relevant advice.
-				</p>
+			<Hero>
+				<div class="row justify-content-between">
+					<div class="col-md-5">
+						<h1><span class="marks">//</span>Contact Us</h1>
+						<p>
+							We're friendly people wanting to help get you back on the road. Get in touch today to get
+							your car booked in. We usually can do same day and next day fittings.
+						</p>
+					</div>
+					<div class="col-md-3">
+						<g-image src="~/assets/img/about-us.png" class="img-fluid"/>
+					</div>
+				</div>
 			</Hero>
 			<div class="offices">
 				<div class="container">
 					<div class="row justify-content-center">
 						<div class="col-md-12">
-							<h2 class="py-5">Where we work from</h2>
+							<h2 class="py-5">Ways to get in touch</h2>
 						</div>
 
-						<div class="col-md-4" v-for="office in offices" :key="office.name">
+						<div class="col-md-4">
 							<div class="card card-office content-box mb-4">
-								<!--<g-image src="~/assets/img/office-ipswich.png" v-if="office.name === 'Ipswich'"-->
-								         <!--class="card-img-top" alt="..."/>-->
-
-								<!--<g-image src="~/assets/img/office-myrtlebeach.png" v-if="office.name === 'Myrtle Beach'"-->
-								         <!--class="card-img-top" alt="..."/>-->
-
-								<!--<g-image src="~/assets/img/office-austin.png" v-if="office.name === 'Houston'"-->
-								         <!--class="card-img-top" alt="..."/>-->
 								<div class="card-body">
-									<h3>{{office.name}}</h3>
-									<h4>{{office.position}}</h4>
-
-									<img src="/squiggle.svg" class="squiggle mb-3 mt-1">
-									<p class="card-text" v-html="office.text1"></p>
-									<a :href="'https://www.google.com/maps/dir/' + office.lat + ',' + office.lng"
-									   target="_blank"
-									   class="btn btn-warning">Directions</a>
-									<div v-on:click="move(office.lat, office.lng)"
-									     class="btn btn-warning">View on Map
-									</div>
+									<h3>Phone Us</h3>
+									<h4>Speak to an expert</h4>
+									<p class="card-text">
+										Phoning us is the quickest and easiest way to get in touch with us to discuss
+										tyre work.
+									</p>
+									<hr>
+									<b>
+										01473 269030<br>
+										07384 928335
+									</b>
+									<a href="tel:01473269030" target="_blank" class="btn btn-dark">Office</a>
+									<a href="tel:07384928335" target="_blank" class="btn btn-dark">Mobile</a>
 								</div>
 							</div>
-
 						</div>
+						<div class="col-md-4">
+							<div class="card card-office content-box mb-4">
+								<div class="card-body">
+									<h3>Email Us</h3>
+									<h4>Great for complex quotes</h4>
+									<p class="card-text">
+										Phoning us is always the best way to get in touch, but you can also reach us via
+										email, we respond within 24 hours.
+									</p>
+									<hr>
+									<b>
+										<br>
+										BSMYTHE@HOTMAIL.CO.UK
+									</b>
+									<a href="mailto:BSMYTHE@HOTMAIL.CO.UK" target="_blank"
+									   class="btn btn-dark">Email</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="card card-office content-box mb-4">
+								<div class="card-body">
+									<h3>Visit Us</h3>
+									<h4>For your tyre fittings</h4>
+									<p class="card-text">
+										Once your tyres are delivered you can come in at a time convenient to yourself.
+										We also have a number of tyres in stock.
+									</p>
+									<hr>
+									<b style="font-size: 0.9rem;">
+										Russell House, Elton Park Business Park,<br>Hadleigh Rd, Ipswich IP2 0DD
+									</b>
+									<a href="https://www.google.com/maps/dir/52.058529,1.125027" target="_blank"
+									   class="btn btn-dark">Directions</a>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 			</div>
@@ -68,24 +105,11 @@
 							:position="m.position"
 							:clickable="true"
 							:draggable="true"
-							icon="http://localhost:8080/assets/static/src/assets/img/logo.png?width=30"
+							icon="http://localhost:8080/assets/static/src/favicon.png?width=30"
 							@click="center=m.position"
 					/>
 				</GmapMap>
 			</ClientOnly>
-			<div class="cta">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<h2>How can we help?</h2>
-							<h3>It might be easier than you think. Get in touch today.</h3>
-							<a href="mailto:team@elementsoftworks.co.uk?subject=ES Contact Enquiry"
-							   class="btn btn-primary">Email us</a>
-							<a href="#" v-on:click="message" class="btn btn-secondary">Open chat</a>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</Layout>
 </template>
@@ -136,42 +160,13 @@
 		},
 		data: function () {
 			return {
-				lat: 52.0531,
-				lng: 1.1632,
+				lat: 52.058529,
+				lng: 1.125027,
 				markers: [
 					{
-						position: {lat: 52.053760, lng: 1.164046},
+						position: {lat: 52.058529, lng: 1.125027},
 						label: 'I',
 						type: 'info'
-					}, {
-						position: {lat: 33.708426, lng: -78.982045},
-						label: 'M'
-					}, {
-						position: {lat: 29.808840, lng: -95.569878},
-						label: 'A'
-					}
-				],
-				offices: [
-					{
-						name: "Ipswich",
-						position: "Main Office",
-						text1: "Ipswich Waterfront Innovation Centre<br>The Atrium, UoS<br> Ipswich, Suffolk<br>IP4 1QJ, United Kingdom",
-						lat: 52.053760,
-						lng: 1.164046,
-					},
-					{
-						name: "Myrtle Beach",
-						position: "Forge Office",
-						text1: "Forge Relations<br>Forestbrook Rd,<br>Myrtle Beach, South Carolina,<br>29588, United States",
-						lat: 33.708426,
-						lng: -78.982045,
-					},
-					{
-						name: "Houston",
-						position: "Skipper Office",
-						text1: "The Cannon,<br>1336 Brittmoore Rd,<br>Houston, Texas,<br> 77043, United States",
-						lat: 29.808840,
-						lng: -95.569878
 					}
 				]
 			}
@@ -213,24 +208,27 @@
 					opacity: 0.7;
 				}
 				.btn {
-					padding: 10px 20px;
+					padding: 10px 30px;
+					font-weight: 400;
+					text-transform: uppercase;
 					margin-right: 5px;
 					margin-left: 5px;
 					margin-top: 23px;
+					background: #111;
+					border: 0;
+					&:hover {
+						color: white !important;
+						background: #333;
+					}
 				}
 				.card-body {
 					padding-bottom: 50px;
-					max-height: 300px;
-					overflow: hidden;
 					background: #f6f6f6;
 					line-height: 30px;
 					@extend .animate;
-				}
-				&:hover {
-					.card-body {
-						max-height: 400px;
-						overflow: hidden;
-						margin-top: -100px;
+
+					b {
+						display: block;
 					}
 				}
 				.squiggle {
@@ -256,13 +254,6 @@
 			.offices .card-office {
 				.card-body {
 					max-height: 370px;
-				}
-				&:hover {
-					.card-body {
-						max-height: 370px;
-						overflow: hidden;
-						margin-top: 0;
-					}
 				}
 			}
 		}
