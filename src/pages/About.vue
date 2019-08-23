@@ -37,7 +37,20 @@
 						</div>
 					</div>
 				</div>
+				<div class="container">
+					<div class="row mt-5 pt-5 services">
+						<h2 class="col-md-12 mb-5"><span class="marks">//</span>Our Services</h2>
+						<Services type="fitting" class="col-md-4"></Services>
+						<Services type="puncture" class="col-md-4"></Services>
+						<Services type="balancing" class="col-md-4"></Services>
+						<Services type="checks" class="col-md-4"></Services>
+						<Services type="pressure" class="col-md-4"></Services>
+						<Services type="mobile" class="col-md-4"></Services>
+					</div>
+				</div>
 			</div>
+
+
 			<div class="bg bg-grey">
 				<div class="container">
 					<h4 class="mb-5"><span class="marks">//</span>Who We Are</h4>
@@ -110,6 +123,7 @@
 <script>
 	import config from 'config';
 	import Hero from '~/components/Hero.vue'
+	import Services from '~/components/Services.vue'
 
 	export default {
 		metaInfo: {
@@ -129,7 +143,7 @@
 			]
 		},
 		components: {
-			Hero
+			Hero, Services
 		},
 		mounted() {
 		},

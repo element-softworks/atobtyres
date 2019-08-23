@@ -1,22 +1,7 @@
 <template>
 	<Layout>
 		<div class="offers">
-			<Hero>
-				<div class="row justify-content-between">
-					<div class="col-md-4 col-sm-6">
-						<h1><span class="marks">//</span>Offers</h1>
-						<p>
-							Scan the QR code or follow through the link, print out the offer page and bring it to your
-							next purchase as A to B Tyres.
-						</p>
-					</div>
-					<div class="col-md-6 col-sm-6">
-						<g-image src="~/assets/img/offers.png" class="img-fluid" style="margin: -50px;"/>
-					</div>
-				</div>
-			</Hero>
-
-
+			{{$id}}
 			<div class="container">
 				<div class="bg">
 					<div class="row justify-content-center">
@@ -41,69 +26,69 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-5 text-center card-offers">
-							<div class="card">
-								<div class="card-header"></div>
-								<div class="card-body">
-									<div class="row">
-										<div class="col-md-5">
-											<h2 class="marks">20%</h2>
-										</div>
-										<div class="col-md-7">
-											<h4><span class="marks">//</span>Uni and College Students</h4>
-										</div>
-										<div class="col-md-12">
-											<p>
-												20% off for students. To Reedem, present your valid
-												university or school ID card
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-5 text-center card-offers">
-							<div class="card">
-								<div class="card-header"></div>
-								<div class="card-body">
-									<div class="row">
-										<div class="col-md-5">
-											<h2 class="marks">£££</h2>
-										</div>
-										<div class="col-md-7">
-											<h4><span class="marks">//</span>Company/work cars and vans</h4>
-										</div>
-										<div class="col-md-12">
-											<p>
-												Discounted rates for company vehicles, get in touch in advance
-												to discuss options
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-5 text-center card-offers">
-							<div class="card">
-								<div class="card-header"></div>
-								<div class="card-body">
-									<div class="row">
-										<div class="col-md-5">
-											<h2 class="marks">10%</h2>
-										</div>
-										<div class="col-md-7">
-											<h4><span class="marks">//</span>Recommend a friend</h4>
-										</div>
-										<div class="col-md-12">
-											<p>
-												Receive 10% off your next tyre by telling us who you referred
-												to us on your next visit
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						<!--<div class="col-md-5 text-center card-offers">-->
+						<!--<div class="card">-->
+						<!--<div class="card-header"></div>-->
+						<!--<div class="card-body">-->
+						<!--<div class="row">-->
+						<!--<div class="col-md-5">-->
+						<!--<h2 class="marks">20%</h2>-->
+						<!--</div>-->
+						<!--<div class="col-md-7">-->
+						<!--<h4><span class="marks">//</span>Uni and College Students</h4>-->
+						<!--</div>-->
+						<!--<div class="col-md-12">-->
+						<!--<p>-->
+						<!--20% off for students. To Reedem, present your valid-->
+						<!--university or school ID card-->
+						<!--</p>-->
+						<!--</div>-->
+						<!--</div>-->
+						<!--</div>-->
+						<!--</div>-->
+						<!--</div>-->
+						<!--<div class="col-md-5 text-center card-offers">-->
+						<!--<div class="card">-->
+						<!--<div class="card-header"></div>-->
+						<!--<div class="card-body">-->
+						<!--<div class="row">-->
+						<!--<div class="col-md-5">-->
+						<!--<h2 class="marks">£££</h2>-->
+						<!--</div>-->
+						<!--<div class="col-md-7">-->
+						<!--<h4><span class="marks">//</span>Company/work cars and vans</h4>-->
+						<!--</div>-->
+						<!--<div class="col-md-12">-->
+						<!--<p>-->
+						<!--Discounted rates for company vehicles, get in touch in advance-->
+						<!--to discuss options-->
+						<!--</p>-->
+						<!--</div>-->
+						<!--</div>-->
+						<!--</div>-->
+						<!--</div>-->
+						<!--</div>-->
+						<!--<div class="col-md-5 text-center card-offers">-->
+						<!--<div class="card">-->
+						<!--<div class="card-header"></div>-->
+						<!--<div class="card-body">-->
+						<!--<div class="row">-->
+						<!--<div class="col-md-5">-->
+						<!--<h2 class="marks">10%</h2>-->
+						<!--</div>-->
+						<!--<div class="col-md-7">-->
+						<!--<h4><span class="marks">//</span>Recommend a friend</h4>-->
+						<!--</div>-->
+						<!--<div class="col-md-12">-->
+						<!--<p>-->
+						<!--Receive 10% off your next tyre by telling us who you referred-->
+						<!--to us on your next visit-->
+						<!--</p>-->
+						<!--</div>-->
+						<!--</div>-->
+						<!--</div>-->
+						<!--</div>-->
+						<!--</div>-->
 
 					</div>
 				</div>
@@ -118,10 +103,10 @@
 
 	export default {
 		metaInfo: {
-			title: 'Offers',
+			title: 'Offer',
 			meta: [
 				{property: "og:type", content: 'article'},
-				{property: "og:title", content: 'Offers - ' + config.name},
+				{property: "og:title", content: 'Offer - ' + config.name},
 				{property: "og:description", content: config.desc},
 				{property: "og:url", content: config.url},
 				{property: "og:image", content: config.url + 'static-about.png'},

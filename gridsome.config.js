@@ -30,6 +30,14 @@ module.exports = {
 			}
 		},
 		{
+			use: '@gridsome/source-filesystem',
+			options: {
+				path: 'offers/**/*.md',
+				typeName: 'Offer',
+				route: '/offer/:id'
+			}
+		},
+		{
 			// Create posts from markdown files
 			use: '@gridsome/source-filesystem',
 			options: {

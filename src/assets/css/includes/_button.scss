@@ -1,4 +1,7 @@
 .btn {
+	&:hover {
+		color: white;
+	}
 	&.btn-primary {
 		border: 2px solid $colour-accent;
 
@@ -24,4 +27,5 @@
 			border: 2px solid darken($colour-light-gray, 10%);
 		}
 	}
+
 }

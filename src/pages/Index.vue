@@ -47,7 +47,7 @@
 									running smoothly, efficiently, economically and legally. We carry an extensive range
 									of tyres which range from top premium tyres, mid-range and budget tyres.
 								</p>
-								<div class="btn btn-dark">View More</div>
+								<g-link to="/about" class="btn btn-dark">View More</g-link>
 							</div>
 						</div>
 					</div>
@@ -58,12 +58,12 @@
 				<div class="container">
 					<div class="row mt-5 pt-5 services">
 						<h2 class="col-md-12 mb-5"><span class="marks">//</span>Our Services</h2>
-						<Services type="fitting" class="col-md-4"></Services>
-						<Services type="puncture" class="col-md-4"></Services>
-						<Services type="balancing" class="col-md-4"></Services>
-						<Services type="checks" class="col-md-4"></Services>
-						<Services type="pressure" class="col-md-4"></Services>
-						<Services type="mobile" class="col-md-4"></Services>
+						<Services type="fitting" class="col-md-4 col-12 col-sm-6"></Services>
+						<Services type="puncture" class="col-md-4 col-12 col-sm-6"></Services>
+						<Services type="balancing" class="col-md-4 col-12 col-sm-6"></Services>
+						<Services type="checks" class="col-md-4 col-12 col-sm-6"></Services>
+						<Services type="pressure" class="col-md-4 col-12 col-sm-6"></Services>
+						<Services type="mobile" class="col-md-4 col-12 col-sm-6"></Services>
 					</div>
 				</div>
 			</div>

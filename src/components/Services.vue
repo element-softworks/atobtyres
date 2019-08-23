@@ -60,6 +60,7 @@
 			border: none;
 			.card-header {
 				min-height: 200px;
+				border-bottom: 0;
 			}
 			.card-body {
 				h3 {
@@ -76,7 +77,7 @@
 			$services: "fitting", "puncture", "balancing", "mobile", "checks", "pressure";
 			@each $service in $services {
 				&.service-#{$service} {
-					.card-header { background: url('~assets/img/service-#{$service}.png'); }
+					.card-header { background: url('~assets/img/service-#{$service}.png') center / cover no-repeat; }
 				}
 			}
 		}
