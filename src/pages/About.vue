@@ -66,17 +66,17 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-5">
-							<div class="row">
-								<div class="col-md-5 align-self-end">
-									<div class="member member-ben"></div>
-								</div>
-								<div class="col-md-7 align-self-end">
-									<h5 style="text-align: left"><span class="marks">//</span>A Guy</h5>
-									<p>Apprentice</p>
-								</div>
-							</div>
-						</div>
+						<!--<div class="col-md-5">-->
+							<!--<div class="row">-->
+								<!--<div class="col-md-5 align-self-end">-->
+									<!--<div class="member member-ben"></div>-->
+								<!--</div>-->
+								<!--<div class="col-md-7 align-self-end">-->
+									<!--<h5 style="text-align: left"><span class="marks">//</span>A Guy</h5>-->
+									<!--<p>Apprentice</p>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
 					</div>
 				</div>
 			</div>

@@ -3,15 +3,13 @@
 		<div class="mobile-fitting">
 			<Hero>
 				<div class="row justify-content-between">
-					<div class="col-md-4 col-sm-7">
-						<h1><span class="marks">//</span>Mobile</h1>
+					<div class="col-md-8">
+						<h1><span class="marks">//</span>Cheap local puncture repair.</h1>
 						<p>
-							Full Mobile Tyre Fitting Service. Same day mobile tyre services at your home, work or
-							roadside assistance to get you back on the road.
+							Same day on-site £20 puncture repair, new valve and wheel balance for car and van tyres in
+							Ipswich. Same day mobile puncture repair £30*
 						</p>
-					</div>
-					<div class="col-md-6 col-sm-5">
-						<g-image src="~/assets/img/van.png" class="img-fluid" style="margin: -100px;"/>
+						<a href="tel:01473269030" class="btn btn-dark">Call Us</a>
 					</div>
 				</div>
 			</Hero>
@@ -19,35 +17,29 @@
 				<div class="container">
 					<div class="row justify-content-center main-text">
 						<div class="col-md-12">
-							<h2><span class="marks">//</span>Convenient</h2>
+							<h2><span class="marks">//</span>Easily Repaired</h2>
 							<p>
-								Tyre problems are a nightmare, and have a nasty habit of happening when they are
-								least
-								convenient.
-								However, at A to B Tyres, we have a large range of machinery to get you back on the
-								road.
-								Whether it's at your home, your work or on the roadside, we're here to help.
+								Punctures are a nightmare, and have a nasty habit of happening when they are least
+								convenient. However, at A to B Tyres, we can carry out a puncture repair at our
+								workshop. If the repair is possible then it works out at a fraction of the cost of a new
+								tyre.
 							</p>
 						</div>
 						<div class="col-md-12">
 							<h2><span class="marks">//</span>Affordable</h2>
 							<p>
 								We are a family run business and we have over 40 years experience in fixing and
-								replacing tyres
-								of all sizes. We know how annoying tyre issues can be, and that's why we'd love to
-								help, at
-								very affordable prices in Ipswich, Suffolk.
+								replacing tyres of all sizes. We know how annoying tyre problems can be, and that's why
+								we'd love to help, at a very affordable price in Ipswich, Suffolk.
 							</p>
 						</div>
 						<div class="col-md-12 mb-3">
-							<h2><span class="marks">//</span>Same day call out and fitting</h2>
+							<h2><span class="marks">//</span>More Options</h2>
 							<p>
-								We understand your time is important, that's why as soon as one of our fitters is
-								available
-								they will come to your assistance the same day. We have a large number of tyres in
-								stock for
-								instant fitting, and if you order before 11am we can fit any tyre for same day
-								delivery.
+								However, not all punctures are repairable, and in most cases the damage will need to
+								assessed by one of our technicians to see if it falls in line with British Standards.
+								Our technician we strive to find a way to fix your problem, if your tyre cannot be
+								repaired - we have a large number of tyres in stock, ready to replace your tyre.
 							</p>
 						</div>
 					</div>
@@ -63,9 +55,7 @@
 						</div>
 						<div class="col-md-12">
 							<b>
-								We offer tyres fitting, tyre repairs, puncture repairs, leverless fitting, fixing
-								cracked rims, replacing TPMS valves and other services both in our warehouse and on
-								the road.
+								*Call out charge may apply.
 							</b>
 						</div>
 					</div>
@@ -150,7 +140,7 @@
 		data: function () {
 			return {
 				lat: 52.058529,
-				lng: 1.125027,
+				lng: 1.135027,
 				markers: [
 					{
 						position: {lat: 52.058529, lng: 1.125027},
@@ -193,7 +183,14 @@
 			padding-bottom: 50px;
 		}
 
+		.btn-dark {
+			float: left;
+			&:hover {
+				color: white !important;
+			}
+		}
 	}
+
 
 	// Extra small devices (portrait phones, less than 576px)
 	@media (max-width: 575.98px) {

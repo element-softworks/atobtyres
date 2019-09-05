@@ -24,15 +24,20 @@
 	<footer>
 		<div class="contain">
 			<div class="row footer-row footer-company-details">
-				<div class="col-md-6">
+				<div class="col-md-4">
 					<a class="footer-logo" href="/">
 						<g-image src="~/assets/img/logo.png" />
 					</a>
 				</div>
-				<div class="col-md-6 text-left text-md-right">
+				<div class="col-md-4 text-center">
+					Elton Park Business Centre<br>
+					Russell House Hadleigh Road<br>
+					Ipswich, Suffolk
+					IP2 0DD
+				</div>
+				<div class="col-md-4 text-left text-md-right">
                     <p>
-                        <g-link to="/terms">Terms & Conditions</g-link>
-                        <g-link to="/privacy">Privacy Policy</g-link>
+                        <g-link to="/cookie-policy">Cookie Policy</g-link>
                     </p>
 					<p>{{config.footer2}} - 2017-{{ new Date().getFullYear() }}<br> © Copyright, {{config.name}} Ltd.</p>
 				</div>

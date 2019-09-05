@@ -142,7 +142,6 @@
 												:position="m.position"
 												:clickable="true"
 												:draggable="true"
-												icon="http://localhost:8080/assets/static/src/assets/img/logo.png?width=30"
 												@click="center=m.position"
 										/>
 									</GmapMap>

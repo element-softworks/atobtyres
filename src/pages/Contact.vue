@@ -86,7 +86,7 @@
 				<GmapMap
 						ref="mapRef"
 						:center="{lat,lng}"
-						:zoom="16"
+						:zoom="14"
 						map-type-id="terrain"
 						style="width: 100%; height: 400px"
 						:options="{
@@ -105,7 +105,6 @@
 							:position="m.position"
 							:clickable="true"
 							:draggable="true"
-							icon="http://localhost:8080/assets/static/src/favicon.png?width=30"
 							@click="center=m.position"
 					/>
 				</GmapMap>

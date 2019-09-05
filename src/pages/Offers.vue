@@ -20,7 +20,7 @@
 			<div class="container">
 				<div class="bg">
 					<div class="row justify-content-center">
-						<div class="col-md-5 text-center card-offers">
+						<div class="col-lg-5 col-md-6 text-center card-offers">
 							<a class="card" href="/offer/services">
 								<div class="card-header">
 									<img src="~/assets/img/qr-services.png" class="qr">
@@ -43,7 +43,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-md-5 text-center card-offers">
+						<div class="col-lg-5 col-md-6 text-center card-offers">
 							<a class="card" href="/offer/student">
 								<div class="card-header">
 									<img src="~/assets/img/qr-student.png" class="qr">
@@ -66,7 +66,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-md-5 text-center card-offers">
+						<div class="col-lg-5 col-md-6 text-center card-offers">
 							<a class="card" href="/offer/company">
 								<div class="card-header">
 									<img src="~/assets/img/qr-company.png" class="qr">
@@ -89,7 +89,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-md-5 text-center card-offers">
+						<div class="col-lg-5 col-md-6 text-center card-offers">
 							<a class="card" href="/offer/friend">
 								<div class="card-header">
 									<img src="~/assets/img/qr-friend.png" class="qr">
