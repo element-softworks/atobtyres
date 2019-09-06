@@ -150,8 +150,8 @@
 			message: function () {
 				FB.CustomerChat.show(true);
 				FB.CustomerChat.update({
-					logged_in_greeting: 'Welcome to our about page, let us know if you have any questions!',
-					logged_out_greeting: "So you'd like to know more about us, log in to chat with us.",
+					logged_in_greeting: 'Welcome to our offers page, let us know if you have any questions!',
+					logged_out_greeting: "So you'd like to know about offers, log in to chat with us.",
 					ref: this.type,
 				});
 			},

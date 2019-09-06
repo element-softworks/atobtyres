@@ -312,6 +312,11 @@
 			font-weight: 300;
 			text-transform: uppercase;
 			padding: 10px 30px;
+			&:hover {
+				color: white !important;
+				background: #333;
+				border-color: #333;
+			}
 		}
 
 		.insta-posts {

@@ -153,8 +153,8 @@
 			message: function (event) {
 				FB.CustomerChat.show(true);
 				FB.CustomerChat.update({
-					logged_in_greeting: 'Seen something you like or what to chat about your next big project?',
-					logged_out_greeting: 'Log in to chat with us about our portfolio or your next big project.',
+					logged_in_greeting: 'Seen something you want to chat about?',
+					logged_out_greeting: 'Log in to chat with us.',
 					ref: this.type,
 				});
 			}
