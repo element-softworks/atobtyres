@@ -184,11 +184,6 @@
 			Hero,
 			Services
 		},
-		data: function () {
-			return {
-				posts: {}
-			}
-		},
 		methods: {
 			message: function (event) {
 				FB.CustomerChat.show(true);

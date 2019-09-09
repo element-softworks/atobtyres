@@ -113,7 +113,6 @@
 	</Layout>
 </template>
 <script>
-	import PostCard from '~/components/PostCard.vue';
 	import config from 'config';
 	import Hero from '~/components/Hero.vue'
 
@@ -135,7 +134,6 @@
 			]
 		},
 		components: {
-			PostCard,
 			Hero
 		},
 		mounted: function () {

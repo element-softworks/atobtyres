@@ -71,15 +71,14 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<ClientOnly>
-			<GmapMap
-					ref="mapRef"
-					:center="{lat,lng}"
-					:zoom="14"
-					map-type-id="terrain"
-					style="width: 100%; height: 400px"
-					:options="{
+			<ClientOnly>
+				<GmapMap
+						ref="mapRef"
+						:center="{lat,lng}"
+						:zoom="14"
+						map-type-id="terrain"
+						style="width: 100%; height: 400px"
+						:options="{
 						   zoomControl: true,
 						   mapTypeControl: false,
 						   scaleControl: false,
@@ -88,22 +87,21 @@
 						   fullscreenControl: false,
 						   disableDefaultUi: true
 						 }"
-			>
-				<GmapMarker
-						:key="index"
-						v-for="(m, index) in markers"
-						:position="m.position"
-						:clickable="true"
-						:draggable="true"
-						@click="center=m.position"
-				/>
-			</GmapMap>
-		</ClientOnly>
+				>
+					<GmapMarker
+							:key="index"
+							v-for="(m, index) in markers"
+							:position="m.position"
+							:clickable="true"
+							:draggable="true"
+							@click="center=m.position"
+					/>
+				</GmapMap>
+			</ClientOnly>
 		</div>
 	</Layout>
 </template>
 <script>
-	import PostCard from '~/components/PostCard.vue';
 	import config from 'config';
 	import Hero from '~/components/Hero.vue'
 
@@ -125,7 +123,7 @@
 			]
 		},
 		components: {
-			PostCard,
+
 			Hero
 		},
 		mounted: function () {

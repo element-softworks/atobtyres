@@ -81,6 +81,7 @@ module.exports = {
 	},
 
 	chainWebpack: config => {
+		config.mode('development');
 		config.module.rules.delete("svg");
 	},
 
@@ -100,4 +101,4 @@ module.exports = {
 			],
 		},
 	}
-}
+};

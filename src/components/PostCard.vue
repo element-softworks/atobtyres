@@ -7,8 +7,8 @@
 				     v-bind:class="{ 'full-image': post.image_nopadding}">
 				</div>
 				<div class="post-card__content col-md-7">
-					<h2 class="post-card__title" v-html="post.title"/>
-					<p class="post-card__description" v-html="post.short"/>
+					<h2 class="post-card__title" v-if="post && post.title" v-html="post.title"></h2>
+					<div class="post-card__description" v-if="post && post.short" v-html="post.short"></div>
 
 					<PostMeta class="post-card__meta" :post="post"/>
 					<PostTags class="post-card__tags" :post="post"/>
@@ -23,8 +23,8 @@
 			     v-bind:class="{ 'full-image': post.image_nopadding}">
 			</div>
 			<div class="post-card__content">
-				<h2 class="post-card__title" v-html="post.title"/>
-				<p class="post-card__description" v-html="post.short"/>
+				<h2 class="post-card__title" v-if="post && post.title"  v-html="post.title"></h2>
+				<div class="post-card__description" v-if="post && post.short"  v-html="post.short"></div>
 
 				<PostMeta class="post-card__meta" :post="post"/>
 				<PostTags class="post-card__tags" :post="post"/>
