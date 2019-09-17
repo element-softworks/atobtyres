@@ -33,11 +33,10 @@
 									</p>
 									<hr>
 									<b>
-										01473 269030<br>
-										07384 928335
+										<br>
+										01473 269030
 									</b>
 									<a href="tel:01473269030" target="_blank" class="btn btn-dark">Office</a>
-									<a href="tel:07384928335" target="_blank" class="btn btn-dark">Mobile</a>
 								</div>
 							</div>
 						</div>

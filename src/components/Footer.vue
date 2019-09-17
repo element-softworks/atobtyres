@@ -14,10 +14,10 @@
 					<mailSVG/>
 					<div>BSMYTHE@HOTMAIL.CO.UK</div>
 				</div>
-				<div class="col-md-3">
-					<mobileSVG/>
-					<div>07384 928335</div>
-				</div>
+				<!--<div class="col-md-3">-->
+					<!--<mobileSVG/>-->
+					<!--<div>07384 928335</div>-->
+				<!--</div>-->
 			</div>
 		</div>
 	</div>
