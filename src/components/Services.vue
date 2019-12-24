@@ -1,15 +1,14 @@
 <template>
-	<div>
-<!--		<div :class="'mb-4 card service-' + type">-->
-<!--			<div class="card-header">-->
-<!--			</div>-->
+	<div v-if="type">
+		<div :class="`mb-4 card service-${type}`">
+<!--			<div class="card-header"></div>-->
 <!--			<div class="card-body">-->
 <!--				<h3><span class="marks">//</span>{{title}}</h3>-->
 <!--				<p class="pt-2">-->
 <!--					{{text}}-->
 <!--				</p>-->
 <!--			</div>-->
-<!--		</div>-->
+		</div>
 	</div>
 </template>
 
@@ -23,7 +22,6 @@
 				},
 				title: '',
 				text: '',
-
 			}
 		},
 		props: {
