@@ -1,7 +1,6 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 
-
 import '~/assets/css/style.scss'
 
 // Import default layout so we don't need to import it to every page
@@ -10,7 +9,7 @@ import DefaultLayout from '~/layouts/Default.vue'
 import BootstrapVue from 'bootstrap-vue'
 
 import * as VueGoogleMaps from 'vue2-google-maps'
-import GridsomeScrollReveal from 'gridsome-scroll-reveal';
+// import GridsomeScrollReveal from 'gridsome-scroll-reveal';
 
 import axios from 'axios'
 import VueAxios from 'vue-axios'
@@ -30,5 +29,5 @@ export default function (Vue, {router, head, appOptions, isClient, isServer}) {
 		},
 	});
 
-	Vue.use(GridsomeScrollReveal)
+	// Vue.use(GridsomeScrollReveal)
 }
