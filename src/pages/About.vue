@@ -11,7 +11,7 @@
 						</p>
 					</div>
 					<div class="col-md-4 col-sm-4">
-						<g-image src="~/assets/img/about-us.png" class="img-fluid" style="margin: -85px auto;"/>
+<!--						<g-image src="~/assets/img/about-us.png" class="img-fluid" style="margin: -85px auto;"/>-->
 					</div>
 				</div>
 			</Hero>

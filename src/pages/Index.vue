@@ -17,19 +17,19 @@
 			<div class="container">
 				<div class="row icons d-flex align-items-center justify-content-center">
 					<div class="col-md-2 col-4">
-						<g-image src="~/assets/img/brand-toyo.png" class="img-fluid"/>
+<!--						<g-image src="~/assets/img/brand-toyo.png" class="img-fluid"/>-->
 					</div>
 					<div class="col-md-2 col-xs-4">
-						<g-image src="~/assets/img/brand-michelin.png" class="img-fluid"/>
+<!--						<g-image src="~/assets/img/brand-michelin.png" class="img-fluid"/>-->
 					</div>
 					<div class="col-md-2">
-						<g-image src="~/assets/img/brand-dunlop.png" class="img-fluid"/>
+<!--						<g-image src="~/assets/img/brand-dunlop.png" class="img-fluid"/>-->
 					</div>
 					<div class="col-md-2">
-						<g-image src="~/assets/img/brand-goodyear.png" class="img-fluid"/>
+<!--						<g-image src="~/assets/img/brand-goodyear.png" class="img-fluid"/>-->
 					</div>
 					<div class="col-md-2">
-						<g-image src="~/assets/img/brand-pirelli.png" class="img-fluid"/>
+<!--						<g-image src="~/assets/img/brand-pirelli.png" class="img-fluid"/>-->
 					</div>
 				</div>
 			</div>
