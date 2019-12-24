@@ -17,7 +17,7 @@ import VueAxios from 'vue-axios'
 
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 export default function (Vue, {router, head, appOptions, isClient, isServer}) {
-	head.script.push({src: 'https://kit.fontawesome.com/cd5ba7601e.js'});
+	// head.script.push({src: 'https://kit.fontawesome.com/cd5ba7601e.js'});
 	// Set default layout as a global component
 	Vue.component('Layout', DefaultLayout);
 	Vue.use(BootstrapVue);
