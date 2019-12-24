@@ -26,7 +26,7 @@
 			<div class="row footer-row footer-company-details">
 				<div class="col-md-4">
 					<a class="footer-logo" href="/">
-<!--						<g-image src="~/assets/img/logo.png" />-->
+						<g-image src="~/assets/img/logo.png" />
 					</a>
 				</div>
 				<div class="col-md-4 text-center">

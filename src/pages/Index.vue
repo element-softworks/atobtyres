@@ -17,19 +17,19 @@
 			<div class="container">
 				<div class="row icons d-flex align-items-center justify-content-center">
 					<div class="col-md-2 col-4">
-<!--						<g-image src="~/assets/img/brand-toyo.png" class="img-fluid"/>-->
+						<g-image src="~/assets/img/brand-toyo.png" class="img-fluid"/>
 					</div>
 					<div class="col-md-2 col-xs-4">
-<!--						<g-image src="~/assets/img/brand-michelin.png" class="img-fluid"/>-->
+						<g-image src="~/assets/img/brand-michelin.png" class="img-fluid"/>
 					</div>
 					<div class="col-md-2">
-<!--						<g-image src="~/assets/img/brand-dunlop.png" class="img-fluid"/>-->
+						<g-image src="~/assets/img/brand-dunlop.png" class="img-fluid"/>
 					</div>
 					<div class="col-md-2">
-<!--						<g-image src="~/assets/img/brand-goodyear.png" class="img-fluid"/>-->
+						<g-image src="~/assets/img/brand-goodyear.png" class="img-fluid"/>
 					</div>
 					<div class="col-md-2">
-<!--						<g-image src="~/assets/img/brand-pirelli.png" class="img-fluid"/>-->
+						<g-image src="~/assets/img/brand-pirelli.png" class="img-fluid"/>
 					</div>
 				</div>
 			</div>
@@ -118,34 +118,34 @@
 									Elton Park Business Centre<br>
 									Russell House<br>Hadleigh Road<br>Ipswich, Suffolk<br>IP2 0DD
 								</p>
-<!--								<ClientOnly>-->
-<!--									<GmapMap-->
-<!--											ref="mapRef"-->
-<!--											:center="{lat,lng}"-->
-<!--											:zoom="15"-->
-<!--											class="col-md-8"-->
-<!--											map-type-id="terrain"-->
-<!--											style="width: 100%; height: 200px"-->
-<!--											:options="{-->
-<!--						   zoomControl: false,-->
-<!--						   mapTypeControl: false,-->
-<!--						   scaleControl: false,-->
-<!--						   streetViewControl: false,-->
-<!--						   rotateControl: false,-->
-<!--						   fullscreenControl: false,-->
-<!--						   disableDefaultUi: true-->
-<!--						}"-->
-<!--									>-->
-<!--										<GmapMarker-->
-<!--												:key="index"-->
-<!--												v-for="(m, index) in markers"-->
-<!--												:position="m.position"-->
-<!--												:clickable="true"-->
-<!--												:draggable="true"-->
-<!--												@click="center=m.position"-->
-<!--										/>-->
-<!--									</GmapMap>-->
-<!--								</ClientOnly>-->
+								<ClientOnly>
+									<GmapMap
+											ref="mapRef"
+											:center="{lat,lng}"
+											:zoom="15"
+											class="col-md-8"
+											map-type-id="terrain"
+											style="width: 100%; height: 200px"
+											:options="{
+						   zoomControl: false,
+						   mapTypeControl: false,
+						   scaleControl: false,
+						   streetViewControl: false,
+						   rotateControl: false,
+						   fullscreenControl: false,
+						   disableDefaultUi: true
+						}"
+									>
+										<GmapMarker
+												:key="index"
+												v-for="(m, index) in markers"
+												:position="m.position"
+												:clickable="true"
+												:draggable="true"
+												@click="center=m.position"
+										/>
+									</GmapMap>
+								</ClientOnly>
 							</div>
 						</div>
 					</div>

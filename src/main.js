@@ -22,12 +22,12 @@ export default function (Vue, {router, head, appOptions, isClient, isServer}) {
 	Vue.use(BootstrapVue);
 
 	Vue.use(VueAxios, axios);
-	// Vue.use(VueGoogleMaps, {
-	// 	load: {
-	// 		key: 'AIzaSyCX8we6CerUwx2abd85WX25afOU8nrCLzM',
-	// 		libraries: 'places',
-	// 	},
-	// });
+	Vue.use(VueGoogleMaps, {
+		load: {
+			key: 'AIzaSyCX8we6CerUwx2abd85WX25afOU8nrCLzM',
+			libraries: 'places',
+		},
+	});
 
 	Vue.use(GridsomeScrollReveal)
 }

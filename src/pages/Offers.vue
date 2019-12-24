@@ -11,7 +11,7 @@
 						</p>
 					</div>
 					<div class="col-md-6 col-sm-6">
-<!--						<g-image src="~/assets/img/offers.png" class="img-fluid" style="margin: -50px;"/>-->
+						<g-image src="~/assets/img/offers.png" class="img-fluid" style="margin: -50px;"/>
 					</div>
 				</div>
 			</Hero>
