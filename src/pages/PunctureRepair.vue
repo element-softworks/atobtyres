@@ -62,33 +62,33 @@
 				</div>
 			</div>
 		</div>
-		<ClientOnly>
-			<GmapMap
-					ref="mapRef"
-					:center="{lat,lng}"
-					:zoom="14"
-					map-type-id="terrain"
-					style="width: 100%; height: 400px"
-					:options="{
-						   zoomControl: true,
-						   mapTypeControl: false,
-						   scaleControl: false,
-						   streetViewControl: false,
-						   rotateControl: false,
-						   fullscreenControl: false,
-						   disableDefaultUi: true
-						 }"
-			>
-				<GmapMarker
-						:key="index"
-						v-for="(m, index) in markers"
-						:position="m.position"
-						:clickable="true"
-						:draggable="true"
-						@click="center=m.position"
-				/>
-			</GmapMap>
-		</ClientOnly>
+<!--		<ClientOnly>-->
+<!--			<GmapMap-->
+<!--					ref="mapRef"-->
+<!--					:center="{lat,lng}"-->
+<!--					:zoom="14"-->
+<!--					map-type-id="terrain"-->
+<!--					style="width: 100%; height: 400px"-->
+<!--					:options="{-->
+<!--						   zoomControl: true,-->
+<!--						   mapTypeControl: false,-->
+<!--						   scaleControl: false,-->
+<!--						   streetViewControl: false,-->
+<!--						   rotateControl: false,-->
+<!--						   fullscreenControl: false,-->
+<!--						   disableDefaultUi: true-->
+<!--						 }"-->
+<!--			>-->
+<!--				<GmapMarker-->
+<!--						:key="index"-->
+<!--						v-for="(m, index) in markers"-->
+<!--						:position="m.position"-->
+<!--						:clickable="true"-->
+<!--						:draggable="true"-->
+<!--						@click="center=m.position"-->
+<!--				/>-->
+<!--			</GmapMap>-->
+<!--		</ClientOnly>-->
 	</Layout>
 </template>
 <script>
