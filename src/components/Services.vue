@@ -3,10 +3,10 @@
 		<div>
 			<div class="card-header"></div>
 			<div class="card-body">
-				<h3><span class="marks">//</span>{{title}}</h3>
-				<p class="pt-2">
-					{{text}}
-				</p>
+<!--				<h3><span class="marks">//</span>{{title}}</h3>-->
+<!--				<p class="pt-2">-->
+<!--					{{text}}-->
+<!--				</p>-->
 			</div>
 		</div>
 	</div>
