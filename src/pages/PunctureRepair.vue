@@ -89,7 +89,6 @@
 				/>
 			</GmapMap>
 		</ClientOnly>
-		</div>
 	</Layout>
 </template>
 <script>
