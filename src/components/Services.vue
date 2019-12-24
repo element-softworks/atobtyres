@@ -69,17 +69,17 @@
 					font-size: 20px;
 				}
 			}
-			//&.service-fitting {
-			//	.card-header {
-			//		background: url('~assets/img/service-fitting.png');
-			//	}
-			//}
-			//$services: "fitting", "puncture", "balancing", "mobile", "checks", "pressure";
-			//@each $service in $services {
-			//	&.service-#{$service} {
-			//		.card-header { background: url('~assets/img/service-#{$service}.png') center / cover no-repeat; }
-			//	}
-			//}
+			&.service-fitting {
+				.card-header {
+					background: url('~assets/img/service-fitting.png');
+				}
+			}
+			$services: "fitting", "puncture", "balancing", "mobile", "checks", "pressure";
+			@each $service in $services {
+				&.service-#{$service} {
+					.card-header { background: url('~assets/img/service-#{$service}.png') center / cover no-repeat; }
+				}
+			}
 		}
 	}
 </style>
