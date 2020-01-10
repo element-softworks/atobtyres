@@ -2,7 +2,7 @@
 	<Layout>
 		<div class="contact-us">
 			<Hero>
-				<div class="row justify-content-between">
+				<div class="row justify-content-between align-items-center">
 					<div class="col-md-4 col-sm-8">
 						<h1><span class="marks">//</span>Contact Us</h1>
 						<p>
@@ -11,7 +11,7 @@
 						</p>
 					</div>
 					<div class="col-md-3 col-sm-4">
-						<g-image src="~/assets/img/about-us.png" class="img-fluid"/>
+						<g-image src="~/assets/img/about-us.png" class="img-fluid" />
 					</div>
 				</div>
 			</Hero>

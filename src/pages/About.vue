@@ -2,7 +2,7 @@
 	<Layout>
 		<div class="about">
 			<Hero>
-				<div class="row justify-content-between">
+				<div class="row justify-content-between align-items-center">
 					<div class="col-md-4 col-sm-8">
 						<h1><span class="marks">//</span>About Us</h1>
 						<p>
@@ -10,8 +10,8 @@
 							striving for excellent customer service.
 						</p>
 					</div>
-					<div class="col-md-4 col-sm-4">
-						<g-image src="~/assets/img/about-us.png" class="img-fluid" style="margin: -85px auto;"/>
+					<div class="col-md-3 col-sm-4">
+						<g-image src="~/assets/img/about-us.png" class="img-fluid" />
 					</div>
 				</div>
 			</Hero>
