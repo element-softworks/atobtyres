@@ -6,7 +6,8 @@
           <div class="col-md-4 col-sm-8">
             <h1><span class="marks">//</span>Order</h1>
             <p>
-              Use our online shop to find the right tyres for you. Get them fitted 
+              Use our online shop to find the right tyres for you. Get them
+              fitted at your convenience.
             </p>
           </div>
           <div class="col-md-4 col-sm-4">
