@@ -9,6 +9,9 @@
 							Full Mobile Tyre Fitting Service. Same day mobile tyre services at your home, work or
 							roadside assistance to get you back on the road.
 						</p>
+
+						<a href="tel:01473269030" class="btn btn-dark">Call Us</a>
+						<a href="/order" class="btn btn-dark" style="margin-left: 10px;">Order Online</a>
 					</div>
 					<div class="col-md-6 col-sm-5">
 						<g-image src="~/assets/img/van.png" class="img-fluid" style="margin: -100px;"/>
@@ -18,6 +21,21 @@
 			<div>
 				<div class="container">
 					<div class="row justify-content-center main-text">
+						<div class="col-md-12">
+							<h2><span class="marks">//</span>Fitting around you</h2>
+							<p>
+								A to B tyres a is a Family run business with a Full Mobile Tyre Fitting Service.
+								Mobile tyre services fitted at your home or at work for your convenience.
+								Order your tyres online to book an appointment for them to be fitted in Ipswich and local areas**
+
+							</p>
+							<p>
+								We provide mobile tyre fitting in Suffolk, Ipswich, Felixstowe, Stowmarket, Woodbridge, Hadleigh, Capel St Mary, Needham Market, and all surrounding villages others outside these areas can be done but an extra charge may apply.
+							</p>
+							<small>
+								** outside the local areas the an extra charge may apply.
+							</small>
+						</div>
 						<div class="col-md-12">
 							<h2><span class="marks">//</span>Convenient</h2>
 							<p>
@@ -191,6 +209,13 @@
 			padding-bottom: 50px;
 		}
 
+	}
+
+
+	.btn-dark {
+		&:hover {
+			color: white !important;
+		}
 	}
 
 	// Extra small devices (portrait phones, less than 576px)

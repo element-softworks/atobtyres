@@ -8,11 +8,11 @@
 				</div>
 				<div class="col-md-3">
 					<phoneSVG/>
-					<div>01473 269030</div>
+					<a href="tel:+441473269030">01473 269030</a>
 				</div>
 				<div class="col-md-3">
 					<mailSVG/>
-					<div>BSMYTHE@HOTMAIL.CO.UK</div>
+					<a href="mailto:BSMYTHE@HOTMAIL.CO.UK">BSMYTHE@HOTMAIL.CO.UK</a>
 				</div>
 				<!--<div class="col-md-3">-->
 					<!--<mobileSVG/>-->
@@ -94,6 +94,11 @@
 			margin: auto;
 			margin-bottom: 5px;
 			min-height: 50px;
+		}
+
+		a {
+			color: #111111;
+			display: block;
 		}
 	}
 
