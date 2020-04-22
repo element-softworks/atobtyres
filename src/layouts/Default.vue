@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<Navbar :portfolioNav="portfolioNav"/>
+		<Navbar :portfolioNav="portfolioNav" />
 		<main class="main">
 			<slot/>
 
