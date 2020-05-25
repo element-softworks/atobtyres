@@ -59,12 +59,7 @@
 						<div class="col-md-12 mb-3">
 							<h2><span class="marks">//</span>Same day call out and fitting</h2>
 							<p>
-								We understand your time is important, that's why as soon as one of our fitters is
-								available
-								they will come to your assistance the same day. We have a large number of tyres in
-								stock for
-								instant fitting, and if you order before 11am we can fit any tyre for same day
-								delivery.
+								We understand your time is important, that's why as soon as one of our fitters is available they will come to your assistance the same day. We have a large number of tyres in stock for instant fitting, and if you order before 11am* we can fit tyres the same day.
 							</p>
 						</div>
 					</div>
@@ -179,6 +174,15 @@
 </script>
 
 <style lang="scss">
+	header, footer {
+		display: none;
+	}
+
+	.hero-content {
+		padding: 100px 0;
+		text-align: initial;
+	}
+
 	.animate {
 		-webkit-transition: all 300ms linear;
 		-moz-transition: all 300ms linear;
