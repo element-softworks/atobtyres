@@ -174,9 +174,9 @@
 </script>
 
 <style lang="scss">
-	header, footer {
-		display: none;
-	}
+	/*header, footer {*/
+	/*	display: none;*/
+	/*}*/
 
 	.hero-content {
 		padding: 100px 0;
