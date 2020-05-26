@@ -35,6 +35,8 @@
 				if (window.location.pathname.indexOf('/portfolio/') !== -1) {
 					// this.portfolioPost = true;
 				}
+
+				console.log("this.$route", this.$route);
 			}
 		},
 		beforeCreate() {
