@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div id="app" v-bind:class="{ 'landing': $route.path == '/mobile-landing' }">
 		<Navbar :portfolioNav="portfolioNav" />
 		<main class="main">
 			<slot/>
@@ -11,7 +11,6 @@
 		</main>
 
 		<Footer/>
-
 	</div>
 </template>
 

@@ -18,6 +18,16 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.landing {
+	header {
+		display: none;
+	}
+
+	footer {
+		display: none;
+	}
+}
+
 svg {
 	height: auto;
 	width: 100%;
