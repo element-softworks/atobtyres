@@ -1,5 +1,5 @@
 <template>
-	<div id="app" v-bind:class="{ 'landing': $route.path == '/mobile-landing' }">
+	<div id="app" v-bind:class="{ 'landing': /^\/mobile-landing/.test($route.path) }">
 		<Navbar :portfolioNav="portfolioNav" />
 		<main class="main">
 			<slot/>
