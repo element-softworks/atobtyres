@@ -35,7 +35,7 @@
 					Ipswich, Suffolk
 					IP2 0DD
 				</div>
-				<div class="col-md-4 text-left text-md-right">
+				<div class="col-md-4 text-center text-md-right">
                     <p>
                         <g-link to="/cookie-policy">Cookie Policy</g-link>
                     </p>
@@ -89,11 +89,12 @@
 	.contact-info {
 		text-align: center;
 		font-weight: bold;
+
 		svg {
-			width: fit-content;
-			margin: auto;
-			margin-bottom: 5px;
-			min-height: 50px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			height: 30px;
+			width: auto;
 		}
 
 		a {

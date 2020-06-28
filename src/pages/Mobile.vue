@@ -7,7 +7,7 @@
                         <h1><span class="marks">//</span>Mobile</h1>
                         <p>
                             Full Mobile Tyre Fitting Service. Same day* mobile tyre services at your home, work or
-                            roadside assistance to get you back on the road.
+                            roadside assistance to get you back on the road. For same day or emergency fitting please CALL US.
                         </p>
 
                         <a href="tel:01473269030" class="btn btn-dark">Call Us</a>
@@ -63,10 +63,7 @@
                         <div class="col-md-12 mb-3">
                             <h2><span class="marks">//</span>Same day call out and fitting</h2>
                             <p>
-                                We understand your time is important, that's why as soon as one of our fitters is
-                                available they will come to your assistance the same day. We have a large number of
-                                tyres in stock for instant fitting, and if you order before 11am* we can fit tyres the
-                                same day.
+                                We understand your time is important, that's why as soon as one of our fitters is available they will come to your assistance the same day. We have a large number of tyres in stock for instant fitting, and if you order before 11am* we can fit tyres the same day.
                             </p>
                         </div>
                     </div>

@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div id="app" v-bind:class="{ 'landing': /^\/mobile-landing/.test($route.path) }">
 		<Navbar :portfolioNav="portfolioNav" />
 		<main class="main">
 			<slot/>
@@ -11,7 +11,6 @@
 		</main>
 
 		<Footer/>
-
 	</div>
 </template>
 
@@ -36,6 +35,8 @@
 				if (window.location.pathname.indexOf('/portfolio/') !== -1) {
 					// this.portfolioPost = true;
 				}
+
+				console.log("this.$route", this.$route);
 			}
 		},
 		beforeCreate() {
