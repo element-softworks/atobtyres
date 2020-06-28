@@ -69,13 +69,13 @@
                     </div>
                     <div class="row">
                         <div class="col-md-4">
-                            <img class="img-fluid" src="~/assets/img/mobile-1.jpg">
+                            <img class="img-fluid" src="~/assets/img/mobile-1.jpg" alt="We repair car and van tyres">
                         </div>
                         <div class="col-md-4">
-                            <img class="img-fluid" src="~/assets/img/mobile-2.jpg">
+                            <img class="img-fluid" src="~/assets/img/mobile-2.jpg" alt="We fit new tyres on a range of vehicles">
                         </div>
                         <div class="col-md-4">
-                            <img class="img-fluid" src="~/assets/img/mobile-3.jpg">
+                            <img class="img-fluid" src="~/assets/img/mobile-3.jpg" alt="We can also fix cracked rims and replace TPMS">
                         </div>
                         <div class="col-md-12">
                             <b>

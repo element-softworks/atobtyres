@@ -23,7 +23,7 @@
 						<div class="col-lg-5 col-md-6 text-center card-offers">
 							<a class="card" href="/offer/services">
 								<div class="card-header">
-									<img src="~/assets/img/qr-services.png" class="qr">
+									<img src="~/assets/img/qr-services.png" class="qr" alt="Public service employees offer">
 								</div>
 								<div class="card-body">
 									<div class="row">
@@ -46,7 +46,7 @@
 						<div class="col-lg-5 col-md-6 text-center card-offers">
 							<a class="card" href="/offer/student">
 								<div class="card-header">
-									<img src="~/assets/img/qr-student.png" class="qr">
+									<img src="~/assets/img/qr-student.png" class="qr" alt="Uni and College Students offer">
 								</div>
 								<div class="card-body">
 									<div class="row">
@@ -69,7 +69,7 @@
 						<div class="col-lg-5 col-md-6 text-center card-offers">
 							<a class="card" href="/offer/company">
 								<div class="card-header">
-									<img src="~/assets/img/qr-company.png" class="qr">
+									<img src="~/assets/img/qr-company.png" class="qr" alt="Company/work cars and vans offer">
 								</div>
 								<div class="card-body">
 									<div class="row">
@@ -92,7 +92,7 @@
 						<div class="col-lg-5 col-md-6 text-center card-offers">
 							<a class="card" href="/offer/friend">
 								<div class="card-header">
-									<img src="~/assets/img/qr-friend.png" class="qr">
+									<img src="~/assets/img/qr-friend.png" class="qr" alt="Recommend a friend offer">
 								</div>
 								<div class="card-body">
 									<div class="row">

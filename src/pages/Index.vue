@@ -4,12 +4,12 @@
       <Hero clipped>
         <h1><span class="marks">//</span>IPSWICH TYRE FITTING SERVICE</h1>
         <div class="arrows">
-          <img src="/chevron-double-down.svg" />
+          <img src="/chevron-double-down.svg" alt="drop down" />
         </div>
         <div class="phone">
           <div class="">
             <a href="tel:01473269030">
-              <img src="/phone.svg" /> 01473 269030
+              <img src="/phone.svg" alt="Phone A To B Tyres" /> 01473 269030
             </a>
           </div>
         </div>
