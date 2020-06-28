@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://atobtyres.co.uk/</loc>
+  <lastmod>2020-06-28T20:28:24+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://atobtyres.co.uk/about/</loc>
+  <lastmod>2020-06-28T20:28:24+00:00</lastmod>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>https://atobtyres.co.uk/offers/</loc>
+  <lastmod>2020-06-28T20:28:24+00:00</lastmod>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://atobtyres.co.uk/mobile/</loc>
+  <lastmod>2020-06-28T20:28:24+00:00</lastmod>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>https://atobtyres.co.uk/order</loc>
+  <lastmod>2020-06-28T20:28:24+00:00</lastmod>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>https://atobtyres.co.uk/contact/</loc>
+  <lastmod>2020-06-28T20:28:24+00:00</lastmod>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>https://atobtyres.co.uk/cookie-policy/</loc>
+  <lastmod>2020-06-28T20:28:24+00:00</lastmod>
+  <priority>0.3</priority>
+</url>
+<url>
+  <loc>https://atobtyres.co.uk/offer/services/</loc>
+  <lastmod>2020-06-28T20:28:24+00:00</lastmod>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://atobtyres.co.uk/offer/student/</loc>
+  <lastmod>2020-06-28T20:28:24+00:00</lastmod>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://atobtyres.co.uk/offer/company/</loc>
+  <lastmod>2020-06-28T20:28:24+00:00</lastmod>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>https://atobtyres.co.uk/offer/friend/</loc>
+  <lastmod>2020-06-28T20:28:24+00:00</lastmod>
+  <priority>0.5</priority>
+</url>
+
+
+</urlset>
