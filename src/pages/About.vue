@@ -21,19 +21,20 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-8 text-center">
-                            <p>
-                                Here at A to B tyres we are a family run business based in Ipswich, offering customers
-                                an onsite service at our garage or a mobile tyre fitting service, in the local and
-                                surrounding areas giving a friendly, professional and fast fit service.
-                                We have built our reputation on providing a fantastic customer experience through great
-                                service and exceptional prices.
+                            <p class="intro">
+                                A to B Tyres Ltd is a family run tyre business in Ipswich near you. We offer a
+                                friendly and professional service supplying and fitting tyres either at our garage
+                                or the mobile tyre fitting van, to enable you to keep your vehicle running smoothly,
+                                efficiently, economically and legally. We carry an extensive range of tyres which
+                                range from top premium tyres, mid-range and budget tyres.
                             </p>
                             <p>
-                                We are dedicated to servicing and supporting both privately owned and work vehicles. We
-                                aim to provide the highest customer service to ensure you are completely satisfied.
-                                There is a comfortable waiting room with a TV, a selection of hot and cold drinks, free
-                                wifi and customer toilets available while you wait.
+                                We can offer same day* fitting at your home, work or roadside assistance to get you
+                                back on the road.
+                                For same day or emergency fitting please CALL US.
+                                <br/><br/><i style="opacity: 0.5;">*if ordered before 11am</i>
                             </p>
+
                         </div>
                     </div>
                 </div>

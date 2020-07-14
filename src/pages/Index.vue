@@ -69,10 +69,10 @@
                         </h2>
                         <Services type="fitting" class="col-md-4 col-12 col-sm-6"/>
                         <Services type="puncture" class="col-md-4 col-12 col-sm-6"/>
+                        <Services type="mobile" class="col-md-4 col-12 col-sm-6"/>
                         <Services type="balancing" class="col-md-4 col-12 col-sm-6"/>
                         <Services type="checks" class="col-md-4 col-12 col-sm-6"/>
                         <Services type="pressure" class="col-md-4 col-12 col-sm-6"/>
-                        <Services type="mobile" class="col-md-4 col-12 col-sm-6"/>
                     </div>
                 </div>
             </div>
