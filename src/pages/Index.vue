@@ -227,20 +227,23 @@
 			}
 		},
 		mounted() {
-			let api = "https://merlin-panel-api.herokuapp.com/";
+			let api = "";
 			// let api = "http://localhost:3000";
-			this.axios.get(api).then(response => {
-				console.log(response.data);
-				this.posts = response.data.slice(0, 3);
-
-				this.posts = this.posts.map(post => {
-					let postText = post.caption;
+			this.axios.get(`https://api.merlinpanel.com/v1/client/social/instagram`,
+                { params: { websiteId: "5f231222aa27330cc98e35e9" } }
+                ).then(response => {
+				this.posts = response.data.slice(0, 3).map(feed => {
 					var regexp = new RegExp("#([^\\s]*)", "g");
-					postText = postText.replace(regexp, "");
+
 					return {
-						...post,
-						date: moment.unix(post.time).format("MMM D"),
-						captionNoTags: postText
+						// ...post,
+						// date: moment.unix(post.time).format("MMM D"),
+						// captionNoTags: postText,
+                        id: feed.id,
+                        date: moment.unix(feed.time).format("MMM D"),
+                        link: feed.link,
+                        captionNoTags: feed.caption.replace(regexp, ""),
+                        image: feed.type === 'carousel' ? feed.content[0][0].url : feed.content[0].url,
 					};
 				});
 			});
