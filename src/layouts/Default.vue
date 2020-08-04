@@ -5,7 +5,7 @@
 			<slot/>
 
 			<ClientOnly>
-				<cookie-law v-on:accept="enableTracking" buttonClass="btn btn-success text-dark" :message="message">
+				<cookie-law v-on:accept="enableTracking" buttonClass="btn btn-success cookie-policy-popup-button" :message="message">
 				</cookie-law>
 			</ClientOnly>
 		</main>
@@ -107,6 +107,12 @@
 </script>
 
 <style lang="scss">
+	.cookie-policy-popup-button {
+		&, &:hover {
+			color: #000000;
+		}
+	}
+
 	.Cookie--base .Cookie__button {
 		background: #5A2AB6;
 		padding: .625em 3.125em;
