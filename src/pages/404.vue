@@ -14,7 +14,7 @@
 						<h3>Let us know by getting in touch below, we'd really appreciate it!</h3>
 						<a href="mailto:BSMYTHE@HOTMAIL.CO.UK?subject=Website Error"
 						   class="btn btn-primary">Email us</a>
-						<a href="#" v-on:click="message" class="btn btn-secondary">Open chat</a>
+						<a href="#" v-on:click.passive="message" class="btn btn-secondary">Open chat</a>
 					</div>
 				</div>
 			</div>
