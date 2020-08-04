@@ -13,7 +13,8 @@
                     <a href="https://facebook.com/atobtyres" target="_blank" rel="noopener noreferrer">
                         <font-awesome :icon="['fab', 'facebook-f']"/>
                     </a>
-                    <a href="https://www.google.com/search?q=atobtyres&oq=google+reviews+atobtyres#lrd=0x47d9a1b2aa8983f7:0xb2c39dbbbc895ea9,1,,," target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.google.com/search?q=atobtyres&oq=google+reviews+atobtyres#lrd=0x47d9a1b2aa8983f7:0xb2c39dbbbc895ea9,1,,,"
+                       target="_blank" rel="noopener noreferrer">
                         <font-awesome :icon="['fab', 'google']"/>
                     </a>
                 </div>
@@ -93,32 +94,38 @@
                     <h2 class="col-md-12 mb-5 mt-5">
                         <span class="marks">//</span>Our Reviews
                     </h2>
-                    <p class="row justify-content-center text-center">See what our clients have to say about us, and don't forget to leave your own review!</p>
+                    <p class="row justify-content-center text-center">See what our clients have to say about us, and
+                        don't forget to leave your own review!</p>
 
                     <div class="row justify-content-center">
                         <div class="col-md-4 col-lg-3">
-                            <a class="review" href="https://www.facebook.com/pg/atobtyres/reviews" target="_blank" rel="noopener noreferrer">
-                                <span class="review-social review-social-facebook row justify-content-center"><font-awesome :icon="['fab', 'facebook']"/></span>
+                            <a class="review" href="https://www.facebook.com/pg/atobtyres/reviews" target="_blank"
+                               rel="noopener noreferrer">
+                                <span class="review-social review-social-facebook row justify-content-center"><font-awesome
+                                        :icon="['fab', 'facebook']"/></span>
                                 <span class="stars row justify-content-center">
-                                    <font-awesome icon="star" />
-                                    <font-awesome icon="star" />
-                                    <font-awesome icon="star" />
-                                    <font-awesome icon="star" />
-                                    <font-awesome icon="star" />
+                                    <font-awesome icon="star"/>
+                                    <font-awesome icon="star"/>
+                                    <font-awesome icon="star"/>
+                                    <font-awesome icon="star"/>
+                                    <font-awesome icon="star"/>
                                 </span>
                                 <p class="rated row justify-content-center text-center">5.0 Rating on Facebook</p>
                                 <p class="row justify-content-center text-center">29 Reviews</p>
                             </a>
                         </div>
                         <div class="col-md-4 col-lg-3">
-                            <a class="review" href="https://www.google.com/search?q=atobtyres&oq=google+reviews+atobtyres#lrd=0x47d9a1b2aa8983f7:0xb2c39dbbbc895ea9,1,,," target="_blank" rel="noopener noreferrer">
-                                <span class="review-social review-social-google row justify-content-center"><font-awesome :icon="['fab', 'google']"/></span>
+                            <a class="review"
+                               href="https://www.google.com/search?q=atobtyres&oq=google+reviews+atobtyres#lrd=0x47d9a1b2aa8983f7:0xb2c39dbbbc895ea9,1,,,"
+                               target="_blank" rel="noopener noreferrer">
+                                <span class="review-social review-social-google row justify-content-center"><font-awesome
+                                        :icon="['fab', 'google']"/></span>
                                 <span class="stars row justify-content-center">
-                                    <font-awesome icon="star" />
-                                    <font-awesome icon="star" />
-                                    <font-awesome icon="star" />
-                                    <font-awesome icon="star" />
-                                    <font-awesome icon="star" />
+                                    <font-awesome icon="star"/>
+                                    <font-awesome icon="star"/>
+                                    <font-awesome icon="star"/>
+                                    <font-awesome icon="star"/>
+                                    <font-awesome icon="star"/>
                                 </span>
                                 <p class="rated row justify-content-center text-center">5.0 Rating on Google</p>
                                 <p class="row justify-content-center text-center">36 Reviews</p>
@@ -139,6 +146,7 @@
                                 :key="posts.id"
                                 class="col-md-4"
                                 :href="post.link"
+                                rel="noopener noreferrer"
                                 target="_blank"
                         >
                             <span>{{ post.date }}</span>
@@ -281,8 +289,8 @@
 			let api = "";
 			// let api = "http://localhost:3000";
 			this.axios.get(`https://api.merlinpanel.com/v1/client/social/instagram`,
-                { params: { websiteId: "5f231222aa27330cc98e35e9" } }
-                ).then(response => {
+				{params: {websiteId: "5f231222aa27330cc98e35e9"}}
+			).then(response => {
 
 				this.posts = response.data.feed.slice(0, 3).map(feed => {
 					var regexp = new RegExp("#([^\\s]*)", "g");
@@ -291,11 +299,11 @@
 						// ...post,
 						// date: moment.unix(post.time).format("MMM D"),
 						// captionNoTags: postText,
-                        id: feed.id,
-                        date: moment.unix(feed.time).format("MMM D"),
-                        link: feed.link,
-                        captionNoTags: feed.caption.replace(regexp, ""),
-                        image: feed.type === 'carousel' ? feed.content[0][0].url : feed.content[0].url,
+						id: feed.id,
+						date: moment.unix(feed.time).format("MMM D"),
+						link: feed.link,
+						captionNoTags: feed.caption.replace(regexp, ""),
+						image: feed.type === 'carousel' ? feed.content[0][0].url : feed.content[0].url,
 					};
 				});
 			});
