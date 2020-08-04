@@ -6,8 +6,8 @@
 			'header-mobile-navigation-closing': isMobileNavigationClosing
 			}">
 			<a class="header-logo" href="/">
-				<g-image v-if="portfolioNav" src="~/assets/img/logo.png"/>
-				<g-image v-else src="~/assets/img/logo-black.png"/>
+				<g-image alt="A To B Tyres Logo" v-if="portfolioNav" src="~/assets/img/logo.png"/>
+				<g-image alt="A To B Tyres Logo" v-else src="~/assets/img/logo-black.png"/>
 <!--				<span>{{projectName}}</span>-->
 			</a>
 
