@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@destinationstransfers/passkit": "^6.5.0",
-    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-brands-svg-icons": "^5.14.0",
     "@fortawesome/free-solid-svg-icons": "^5.9.0",
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/remark-prismjs": "^0.1.0",

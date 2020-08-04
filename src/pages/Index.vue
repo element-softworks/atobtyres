@@ -6,6 +6,17 @@
                 <div class="arrows">
                     <img src="/chevron-double-down.svg" alt="drop down"/>
                 </div>
+                <div class="social">
+                    <a href="https://instagram.com/atobtyres" target="_blank" rel="noopener noreferrer">
+                        <font-awesome :icon="['fab', 'instagram']"/>
+                    </a>
+                    <a href="https://facebook.com/atobtyres" target="_blank" rel="noopener noreferrer">
+                        <font-awesome :icon="['fab', 'facebook-f']"/>
+                    </a>
+                    <a href="https://www.google.com/search?q=atobtyres&oq=google+reviews+atobtyres#lrd=0x47d9a1b2aa8983f7:0xb2c39dbbbc895ea9,1,,," target="_blank" rel="noopener noreferrer">
+                        <font-awesome :icon="['fab', 'google']"/>
+                    </a>
+                </div>
                 <div class="phone">
                     <div class="">
                         <a href="tel:01473269030">
@@ -17,19 +28,19 @@
             <div class="container">
                 <div class="row icons d-flex align-items-center justify-content-center">
                     <div class="col-md-2 col-4">
-                        <g-image src="~/assets/img/brand-toyo.png" class="img-fluid"/>
+                        <g-image src="~/assets/img/brand-toyo.png" alt="Toyo Tyes" class="img-fluid"/>
                     </div>
                     <div class="col-md-2 col-xs-4">
-                        <g-image src="~/assets/img/brand-michelin.png" class="img-fluid"/>
+                        <g-image src="~/assets/img/brand-michelin.png" alt="Michelin Tyes" class="img-fluid"/>
                     </div>
                     <div class="col-md-2">
-                        <g-image src="~/assets/img/brand-dunlop.png" class="img-fluid"/>
+                        <g-image src="~/assets/img/brand-dunlop.png" alt="Dunlop Tyes" class="img-fluid"/>
                     </div>
                     <div class="col-md-2">
-                        <g-image src="~/assets/img/brand-goodyear.png" class="img-fluid"/>
+                        <g-image src="~/assets/img/brand-goodyear.png" alt="Goodyear Tyes" class="img-fluid"/>
                     </div>
                     <div class="col-md-2">
-                        <g-image src="~/assets/img/brand-pirelli.png" class="img-fluid"/>
+                        <g-image src="~/assets/img/brand-pirelli.png" alt="Pirelli Tyes" class="img-fluid"/>
                     </div>
                 </div>
             </div>
@@ -51,7 +62,7 @@
                                     We can offer same day* fitting at your home, work or roadside assistance to get you
                                     back on the road.
                                     For same day or emergency fitting please CALL US.
-                                    <br/><br/><i style="opacity: 0.5;">*if ordered before 11am</i>
+                                    <br/><br/><i style="color: #4A4B4C!important;">*if ordered before 11am</i>
                                 </p>
 
                                 <g-link to="/about" class="btn btn-dark">View More</g-link>
@@ -80,6 +91,46 @@
             <div class="bg bg-grey">
                 <div class="container">
                     <h2 class="col-md-12 mb-5 mt-5">
+                        <span class="marks">//</span>Our Reviews
+                    </h2>
+                    <p class="row justify-content-center text-center">See what our clients have to say about us, and don't forget to leave your own review!</p>
+
+                    <div class="row justify-content-center">
+                        <div class="col-md-4 col-lg-3">
+                            <a class="review" href="https://www.facebook.com/pg/atobtyres/reviews" target="_blank" rel="noopener noreferrer">
+                                <span class="review-social review-social-facebook row justify-content-center"><font-awesome :icon="['fab', 'facebook']"/></span>
+                                <span class="stars row justify-content-center">
+                                    <font-awesome icon="star" />
+                                    <font-awesome icon="star" />
+                                    <font-awesome icon="star" />
+                                    <font-awesome icon="star" />
+                                    <font-awesome icon="star" />
+                                </span>
+                                <p class="rated row justify-content-center text-center">5.0 Rating on Facebook</p>
+                                <p class="row justify-content-center text-center">29 Reviews</p>
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-lg-3">
+                            <a class="review" href="https://www.google.com/search?q=atobtyres&oq=google+reviews+atobtyres#lrd=0x47d9a1b2aa8983f7:0xb2c39dbbbc895ea9,1,,," target="_blank" rel="noopener noreferrer">
+                                <span class="review-social review-social-google row justify-content-center"><font-awesome :icon="['fab', 'google']"/></span>
+                                <span class="stars row justify-content-center">
+                                    <font-awesome icon="star" />
+                                    <font-awesome icon="star" />
+                                    <font-awesome icon="star" />
+                                    <font-awesome icon="star" />
+                                    <font-awesome icon="star" />
+                                </span>
+                                <p class="rated row justify-content-center text-center">5.0 Rating on Google</p>
+                                <p class="row justify-content-center text-center">36 Reviews</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg">
+                <div class="container">
+                    <h2 class="col-md-12 mb-5 mt-5">
                         <span class="marks">//</span>Latest Jobs
                     </h2>
                     <div class="row insta-posts">
@@ -102,7 +153,7 @@
                 </div>
             </div>
 
-            <div class="bg">
+            <div class="bg bg-grey">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-md-6 opening">
@@ -175,7 +226,7 @@
                                                 :position="m.position"
                                                 :clickable="true"
                                                 :draggable="true"
-                                                @click="center = m.position"
+                                                v-on:click.passive="center = m.position"
                                         />
                                     </GmapMap>
                                 </ClientOnly>
@@ -232,7 +283,8 @@
 			this.axios.get(`https://api.merlinpanel.com/v1/client/social/instagram`,
                 { params: { websiteId: "5f231222aa27330cc98e35e9" } }
                 ).then(response => {
-				this.posts = response.data.slice(0, 3).map(feed => {
+
+				this.posts = response.data.feed.slice(0, 3).map(feed => {
 					var regexp = new RegExp("#([^\\s]*)", "g");
 
 					return {
@@ -247,13 +299,6 @@
 					};
 				});
 			});
-
-			// const sweetArray = [2, 3, 4, 5, 35]
-			// const sweeterArray = sweetArray.map(sweetItem => {
-			// 	return sweetItem * 2
-			// })
-			//
-			// console.log(sweeterArray)
 		},
 		destroyed() {
 		},
@@ -305,6 +350,30 @@
                 // bottom: 30px;
             }
 
+            .social {
+                position: absolute;
+                float: left;
+                bottom: 30px;
+                left: 50px;
+                font-weight: bold;
+
+                a {
+                    color: white;
+                    font-size: 30px;
+                    margin-right: 30px;
+
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.9);
+                        text-decoration: none;
+                    }
+                }
+
+                img {
+                    max-height: 21px;
+                    margin-top: -6px;
+                }
+            }
+
             .phone {
                 position: absolute;
                 float: right;
@@ -313,8 +382,13 @@
                 font-weight: bold;
 
                 a {
-                    color: white;
                     font-size: 25px;
+                    color: white;
+
+                    &:hover {
+                        color: rgba(255, 255, 255, 0.9);
+                        text-decoration: none;
+                    }
                 }
 
                 img {
@@ -352,6 +426,56 @@
                 color: white !important;
                 background: #333;
                 border-color: #333;
+            }
+        }
+
+        .review {
+            text-decoration: none;
+            color: initial;
+
+            > * {
+                opacity: 1;
+                transition: opacity ease-in-out .2s;
+            }
+
+            &:hover {
+                > * {
+                    opacity: 0.8;
+                }
+            }
+
+            .review-social {
+                font-size: 40px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+
+                &.review-social-facebook {
+                    color: #3b5998;
+                }
+
+                &.review-social-google {
+                    color: black;
+                }
+            }
+
+            .stars {
+                color: #f5b04d;
+                font-size: 20px;
+                margin-bottom: 20px;
+
+                > * {
+                    margin-left: 2.5px;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+
+            .rated {
+                font-weight: 600;
+                font-size: 18px;
+                margin-bottom: 0;
             }
         }
 

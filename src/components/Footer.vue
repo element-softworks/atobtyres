@@ -6,18 +6,18 @@
 				<div class="col-12">
 					<h4 class="mb-4"><span class="marks">//</span>Got Questions?</h4>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-4 col-lg-3">
 					<phoneSVG/>
 					<a href="tel:+441473269030">01473 269030</a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-4 col-lg-3">
 					<mailSVG/>
 					<a href="mailto:BSMYTHE@HOTMAIL.CO.UK">BSMYTHE@HOTMAIL.CO.UK</a>
 				</div>
-				<!--<div class="col-md-3">-->
-					<!--<mobileSVG/>-->
-					<!--<div>07384 928335</div>-->
-				<!--</div>-->
+				<div class="col-md-4 col-lg-3">
+					<font-awesome class="social-facebook" :icon="['fab', 'facebook-f']"/>
+					<a href="https://facebook.com/atobtyres" target="_blank" rel="noopener noreferrer">FACEBOOK</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -95,6 +95,13 @@
 			margin-bottom: 20px;
 			height: 30px;
 			width: auto;
+			color: #E53333;
+		}
+
+
+		.social-facebook {
+			width: auto;
+			font-size: 53px;
 		}
 
 		a {
@@ -111,16 +118,18 @@
 		background: #F5F5F5;
 	}
 
+	@media (max-width: 1023px) {
+		.contact-info {
+			 > * {
+				 margin-top: 30px;
+			 }
+		}
+	}
 
 	@media (max-width: 575.98px) {
 		footer {
 			.footer-content > * {
 				margin: 15px 0 !important;
-			}
-		}
-		.contact-info {
-			.col-md-3 {
-				margin-top: 30px;
 			}
 		}
 	}

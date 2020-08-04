@@ -5,11 +5,10 @@
 			<slot/>
 
 			<ClientOnly>
-				<cookie-law v-on:accept="enableTracking" buttonClass="btn btn-success" :message="message">
+				<cookie-law v-on:accept="enableTracking" buttonClass="btn btn-success text-dark" :message="message">
 				</cookie-law>
 			</ClientOnly>
 		</main>
-
 		<Footer/>
 	</div>
 </template>

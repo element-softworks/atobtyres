@@ -22,8 +22,7 @@
 
 
             <div class="order-iframe">
-                <iframe width="100%" style="padding-top: 50px;" title="Shop" src="/order.html">
-                </iframe>
+                <iframe width="100%" style="padding-top: 50px;" title="Shop" src="/tyresoft-iframe.html" />
             </div>
 
             <div class="bg order">

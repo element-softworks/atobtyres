@@ -85,7 +85,7 @@
 						:position="m.position"
 						:clickable="true"
 						:draggable="true"
-						@click="center=m.position"
+						v-on:click.passive="center=m.position"
 				/>
 			</GmapMap>
 		</ClientOnly>
