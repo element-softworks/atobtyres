@@ -366,6 +366,10 @@
                         color: rgba(255, 255, 255, 0.9);
                         text-decoration: none;
                     }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
                 }
 
                 img {
@@ -559,11 +563,15 @@
                 font-size: 50px;
             }
 
-            .phone {
+            .phone, .social {
                 right: auto;
                 left: 50%;
                 transform: translateX(-50%);
                 width: 100%;
+            }
+
+            .phone {
+                bottom: 90px;
             }
         }
         .index {
