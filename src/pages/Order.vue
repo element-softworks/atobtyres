@@ -21,11 +21,11 @@
             </Hero>
 
 
-            <div class="order-iframe">
-                <iframe width="100%" style="padding-top: 50px;" title="Shop" src="/tyresoft-iframe.html" />
-            </div>
+<!--            <div class="order-iframe" id="tyresoftscript">-->
+<!--                &lt;!&ndash; <iframe width="100%" style="padding-top: 50px;" title="Shop" src="/tyresoft-iframe.html" /> &ndash;&gt;-->
+<!--            </div>-->
 
-            <div class="bg order">
+            <div class="bg">
                 <div class="container">
                     <div class="row justify-content-center main-text">
                         <div class="col-md-12">
@@ -48,10 +48,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="container">
+
+                <div class="tyresoft">
+                    <!-- DO NOT REMOVE, TYRESOFT HAS HARDCODED THIS! -->
+                    <div id="tyresoftscript"></div>
+                </div>
             </div>
         </div>
+
+
+        <div ref="tyresoft"></div>
     </Layout>
 </template>
 
@@ -78,7 +84,59 @@
 		},
 		components: {
 			Hero
-		}
+		},
+        async mounted() {
+		    console.log("MOUNTED!");
+            await this.loadScript();
+        },
+        beforeDestroy() {
+		    this.destroyScript();
+        },
+        watch:{
+            $route (to, from){
+               console.log({to, from})
+            }
+        },
+        methods: {
+            destroyScript() {
+                this.$refs.tyresoft.innerHTML = '';
+            },
+            loadScript () {
+                let self = this;
+                return new Promise((resolve, reject) => {
+
+                    // if script is already loading via another component
+                    if ( self.is_script_loading ){
+                        // Resolve when the other component has loaded the script
+                        this.$root.$on('script_loaded', resolve)
+                        return
+                    }
+
+                    let script = document.createElement('script')
+                    script.setAttribute('type', 'application/javascript');
+                    script.setAttribute('src', 'https://widget.tires/public/tyresoftscript/v3main.js?tt=ttt')
+                    script.async = true
+
+                    this.$root.$emit('loading_script')
+
+                    script.onload = () => {
+                        /* emit to global event bus to inform other components
+						 * we are already loading the script */
+                        this.$root.$emit('script_loaded')
+                        resolve()
+                    }
+
+                    this.$refs.tyresoft.appendChild(script);
+                })
+            },
+            // async use_script () {
+            //     try {
+            //         await this.load_script()
+            //         // .. do what you want after script has loaded
+            //     } catch (err) { console.log(err) }
+            //
+            // }
+        }
 	};
 </script>
 <style lang="scss">
@@ -96,12 +154,14 @@
     }
 
     .order {
-        padding-bottom: 60px;
-
         .main-text {
             p {
                 font-size: 20px;
             }
         }
+    }
+
+    .tyresoft {
+        padding-top: 50px;
     }
 </style>
